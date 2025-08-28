@@ -2,8 +2,7 @@
 
 When using the API as we've seen one needs an API key to get access. The API key is a user name and password in one convenient package. All the recommendations around dealing with a password apply to it's usage. This presents a problem, as writing a password into a file to get the needed access creates a high security risk.
 
-In 2023 it is estimated that 12 million API keys were leaked on GitHub, a public code sharing website.[Toulas 2023][1]. Private health information (PHI) in the United States carries a minimum \$141 per record leaked with a cap of $2,134,831 per incident as of August
-2024[Federal Register][2]. The possibility of leakage from an API key in code is massive and should never be done.
+In 2023 it is estimated that 12 million API keys were leaked on GitHub, a public code sharing website.[Toulas 2023][1]. Private health information (PHI) in the United States carries a minimum \$141 per record leaked with a cap of $2,134,831 per incident as of August 2024[Federal Register][2]. The possibility of leakage from an API key in code is massive and should never be done. Leaking a key (e.g. via stolen laptop) is a reportable security incident if PHI is involved and can have serious consequences.
 
 It is insufficient to say what not to do, a positive solution is required. That solution should have the following properties:
 
@@ -19,12 +18,13 @@ This is a tall bill of goods to accomplish, but it's available in the R package 
 
 Let's first look at an example using `redcapAPI`. This has a helper function (calling `shelter`) that hides a part we'll explore later. This would be near the top of an R function to open the connection. 
 
-```{r}
+```r
 library(redcapAPI)
+uri <- "https://redcap-dev-2.ouhsc.edu/redcap/api/"
 unlockREDCap(c(rcc = 'REDCapCon2025'), 
              keyring='API_KEYS',
              envir=1,
-             url='https://redcap.vumc.org/api/')
+             url=uri)
 ```
 
 And with that small bit of code, the chance of leakage of API_KEY is greatly reduced.
@@ -45,7 +45,7 @@ The first time this is run, it will ask for a password for the key ring. Later e
 
 What's needed is a "connect and check" function. A function that given an API key, returns either a connection object or NULL upon failure. 
 
-```{r}
+```r
 library(shelter)
 library(REDCapR)
 checkToken <- function(key, ...)
@@ -55,9 +55,9 @@ checkToken <- function(key, ...)
 }
 ```
 
-Let's see how that works
+Let's see how that works:
 
-```{r}
+```r
 uri <- "https://redcap-dev-2.ouhsc.edu/redcap/api/"
 
 # THIS IS EXACTLY WHAT SHOULD NEVER BE IN ONES CODE
@@ -78,7 +78,7 @@ checkToken(token, redcap_uri="https://google.com")
 
 Thus one can use this function to store the token in a key ring instead of writing it in code via `shelter`.
 
-```{r}
+```r
 unlockKeys(c(token='OUHSC_DEV2'),
            keyring='API_KEYs',
            connectFUN=checkToken,
@@ -109,4 +109,5 @@ If you have automation needs have your sys admin email on of the authors of the 
 * [1]: Toulas B (2023). "Over 12 million auth secrets and keys leaked on GitHub in 2023." https://www.bleepingcomputer.com/news/security/
 over-12-million-auth-secrets-and-keys-leaked-on-github-in-2023/
 * [2]: (2024). Federal Register, (2024-17446), 64815\u201364832.
-* [3]: https://github.com/vubiostat/shelter
+* [3]: [CRAN: shelter](https://cran.r-project.org/package=shelter)
+
