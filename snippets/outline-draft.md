@@ -1,8 +1,10 @@
 Draft of Outline from August Meeting
 ==============
 
-1. Introductions 5m
-1. Motivation (Günther)
+Total time: **70m**
+
+1. Introductions 1m
+1. Motivation (Günther) 5m
    1. vs csv
    1. vs writing your own R code with httr/RCurl
 1. Prereqs  (Günther)
@@ -21,7 +23,8 @@ Draft of Outline from August Meeting
 1. Writing (brief -Will)
 1. Other packages (brief -Will)
 1. REDCap API 2.0 (Günther)
-1. (Günther) 10m, Issues with API
-     a. Mentioned Python and Ruby tools.
-1. Benjamin Nutter slide
-1. Q&A
+   a. (Günther) 10m, Issues with API
+   a. Mention Python and Ruby tools.
+1. Closing
+   1. Benjamin Nutter slide
+   1. Q&A
