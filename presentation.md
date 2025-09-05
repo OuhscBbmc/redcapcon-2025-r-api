@@ -9,6 +9,36 @@ Follow along with us at
 <https://github.com/OuhscBbmc/redcapcon-2025-r-api>
 
 Agenda
-==============
+------------
 
-{Insert from <outline-draft.md> here}
+{Insert from <snippets/outline-draft.md> here}
+
+Motivation
+------------
+
+Prereqs
+------------
+
+Basic Introduction redcapAPI/REDCapR
+------------
+
+Security
+------------
+
+Type Theory (type casting)
+------------
+
+Longitudinal
+------------
+
+Writing
+------------
+
+Other packages
+------------
+
+REDCap API 2.0
+------------
+
+Closing
+------------
