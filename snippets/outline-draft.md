@@ -1,8 +1,10 @@
 Draft of Outline from August Meeting
 ==============
 
-1. Introductions 5m
-1. Motivation (Günther)
+Total time: **70m**
+
+1. Introductions 1m
+1. Motivation (Günther) 5m
    1. vs csv
    1. vs writing your own R code with httr/RCurl
 1. Prereqs  (Günther)
