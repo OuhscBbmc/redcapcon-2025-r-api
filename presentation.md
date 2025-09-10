@@ -524,6 +524,10 @@ In RStudio, look under Tools -> Global Options -> General and make sure save is 
 
 Further making sure if one needs to store PHI/PII locally that is always stored to an encrypted volume in some form is important.
 
+## Security Method 3:
+
+Create a custom database to store tokens. See [writeup](https://ouhscbbmc.github.io/REDCapR/articles/SecurityDatabase.html).
+
 ## Takeaway on Security
 
 Good security around sensitive data doesn't have to be difficult, and now one is equipped with practical and easy means to prevent key leakage. Utilizing `shelter::unlockKeys` or `redcapAPI::unlockREDCap` has an additional advantage that it works well with automated environments creating a seemless transition to an automated report system. A sys admin may utilize overriding the interactive bits of `shelter` by providing system level ENV variables or a local yaml key file. Thus with a simple call one is now enhancing security *and* preparing for automated reporting. 
@@ -550,7 +554,7 @@ Type casting is the conversion from one data type into another in a computer. Al
 
 $f : A \rightarrow B$ denotes a function, $f$ in type theory is a function that converts something of type $A$ into something of type $B$. The value of automatically evaluating and checking this has become very important in computer science. However, the idea has become incredibly important in mathematics as well. Betrand Russell published *Principia Mathematica* in 1910 seeking to find a single foundation for all of mathematics. He settled on set theory and it had 18 axioms, small formal assumptions, which it was based on. In this system it takes about 300 pages of math to show that 1+1=2. Godel's famous incompleteness theorem in 1929 was a huge blow to the goals of finding a single system that all mathematics could be based upon--as any such system must forever remain incomplete. Type theory in computers began making theoretical advances in the 1960's, a system Russell had initially considered. Voevodsky in 2006 showed a homotopy between $\lambda$-calculus, algebraic topology and type theory which is homotopy type theory (HoTT). In this foundation only 2 axioms are required to bootstrap mathematics and a short few pages to show 1+1=2. Russell's vision from a century before has been realized. One of those axioms, is the existence of a path between two points $A$ and $B$ which is represented by $f : A \rightarrow B$, thus making type casting one of the deepest philosophical entities in mathematics! 
 
-![](./images/type-theory.png)
+![](./images/type-theory.png){width=400px}
 
 Fortunately, a REDCap user's needs are simpler--and the API developers have you covered. However, it is not as simple as it sounds. All data stored in REDCap is character or string. In the computer, an analyst wants dates, numbers, factors or potentially some other data type the authors of `REDCapR` and `redcapAPI` have never heard of. To further complicate matters data can be missing under a variety of definitions and it might be invalid as user input may have been changed from free form to date specified in the middle of data collection leading to a huge number of uninterpretable date values.
 
@@ -693,7 +697,11 @@ One thing that is quite common as an analyst is locating those pesky values that
 #> REDCap version 15.2.0 
 ```
 
-There's no data validations to report, all is good. The print for this renders to markdown for embedding in a report. If there had been validation failures--it would provide a direct html link to the form to edit that record. 
+There's no data validations to report, all is good. The print for this renders to markdown for embedding in a report. If there had been validation failures--it would provide a direct html link to the form to edit that record.
+
+## Zero Coding
+
+A rare issue that has occurred in practice is that of a variable that has zero coded value. Typically 0 indicates lack of data or NA, but 0 may have a meaning in some contexts. An extreme example is where if one were to define 0=TRUE and 1=FALSE, there are cases where type casting is indeterminate. `redcapAPI` issues a warning if it encounters this case to encourage the user to spot audit data that has zero coding to ensure things are as expected and the argument `warn_zero_coding=FALSE` will turn off this message.
 
 ## Sparse Block Matrix Form
 
