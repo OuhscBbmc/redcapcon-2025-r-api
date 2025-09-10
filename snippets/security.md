@@ -152,7 +152,7 @@ token
 redcap_version(token=token, verbose=FALSE, redcap_uri = uri)
 #> [1] '15.2.0'
 ```
-Thus this token is now hidden behind the name "OUHSC_DEV2" and sits in memory as `token`. It is stored encrypted and is decrypted using the user supplied password. The key ring is named 'API_KEYs'. 
+Thus this token is now hidden behind the name "REDCapCon2025" and sits in memory as `token`. It is stored encrypted and is decrypted using the user supplied password. The key ring is named 'API_KEYs'. 
 
 ## Important Note
 
