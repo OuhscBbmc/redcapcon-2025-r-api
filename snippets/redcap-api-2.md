@@ -57,6 +57,7 @@ Several key areas for improving the API have been identified and discussed in pr
     - providing custom-tailored API documentation for any given project (and depending on the rights associated with the token), which
     - includes all project-specific items such as field, form, event names (if applicable), and
     - is available through the API itself (via `rpc.discover`).
+  - This change will make it **much easier to introduce new API methods**, because documentation and the API Playground will no longer need to be implemented separately, a step that currently poses a major hurdle.
 - **API versioning**
   - API versioning built-in (`/api/?json-rpc=v1`)
   - Similar to EM Framework (new versions only when there are breaking changes to existing methods)
