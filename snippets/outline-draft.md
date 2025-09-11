@@ -22,9 +22,9 @@ Total time: **70m**
    1. REDCapTideR
 1. Writing (brief -Will)
 1. Other packages (brief -Will)
+   a. Mention Python and Ruby tools.
 1. REDCap API 2.0 (Günther)
    a. (Günther) 10m, Issues with API
-   a. Mention Python and Ruby tools.
 1. Closing
    1. Benjamin Nutter slide
    1. Q&A
