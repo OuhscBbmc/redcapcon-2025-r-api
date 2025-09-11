@@ -114,7 +114,7 @@ Below, line 7 of the CSV with date-shifted values is shown.
     - **Import/Update** (write data)
     - **External Modules API** (access EM-provided methods)
 - **API, API Playground, and API Documentation**
-  - Accessible from the _Applications_ menu:
+  - Accessible from the _Applications_ menu:  
     ![](../images/api-playground-menu.png)
   - Allows to request and then view/mangage the API token
   - Show available methods
