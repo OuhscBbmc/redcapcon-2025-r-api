@@ -132,8 +132,11 @@ Below, line 7 of the CSV with date-shifted values is shown.
 
 - **API Tokens**
   - Unique key linked to a specific **user _and_ project**
-  - Grants access according to that user’s rights
-  - Must be kept **secure** (details on token handling will follow later)
+  - Tokens provide both,
+    - **AuthenticationÜÜ (like username + password) and
+    - **Authorization** (role/user rights of the user in that specific project)
+  - REDCap provides tools for token management (cycling, revocation, transfer)
+  - Must be kept **secure** (details on token handling _outside of REDCap_ will follow later)
 
 **Tip**: If you are a data analyst without access to the production REDCap project but need to learn how the REDCap API works, ask for access to a demo or test project. This allows you to safely “play around” and practice API calls without risking production data.
 
