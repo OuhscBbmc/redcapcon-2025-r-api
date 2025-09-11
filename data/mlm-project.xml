@@ -1,0 +1,3685 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="REDCapR: multilevel model 1" AsOfDateTime="2025-09-11T17:47:36" CreationDateTime="2025-09-11T17:47:36" SourceSystem="REDCap" SourceSystemVersion="15.2.0">
+<ClinicalData StudyOID="Project.REDCapRMultilevelModel1" MetaDataVersionOID="Metadata.REDCapRMultilevelModel1_2025-09-11_1747">
+	<SubjectData SubjectKey="1001" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1001"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="255"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-02-06"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-03-28"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="0.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-02-27"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-27"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-16"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-24"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-29"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.8"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-07"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.8"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-02-17"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.9"/>
+					<ItemData ItemOID="phys_2" Value="5.1"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-09"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="13.442"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="4.2"/>
+					<ItemData ItemOID="phys_2" Value="4.8"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1002" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1002"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="Native Hawaiian or Other Pacific Islander"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-02-24"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="2"/>
+					<ItemData ItemOID="phys_2" Value="2.8"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-03-19"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="7.8"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-03-05"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="7.7"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-01-31"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-18"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-11"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="7.3"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-01"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7.4"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-04"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.3"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-19"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.6"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-26"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="13.447"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.119"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.4"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1003" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1003"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="American Indian/Alaska Native"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-31"/>
+					<ItemData ItemOID="age" Value="56"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-19"/>
+					<ItemData ItemOID="age" Value="57"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-06"/>
+					<ItemData ItemOID="age" Value="58"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.3"/>
+					<ItemData ItemOID="cog_3" Value="8.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-11"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-02-18"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.3"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-23"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.3"/>
+					<ItemData ItemOID="cog_3" Value="8.7"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="2.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-25"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-03-12"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2013-02-16"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2014-04-05"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="14.582"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.022"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.9"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1004" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1004"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="White"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-03"/>
+					<ItemData ItemOID="age" Value="56"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="6.5"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-12"/>
+					<ItemData ItemOID="age" Value="57"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="6.5"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.2"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-04"/>
+					<ItemData ItemOID="age" Value="58"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5.2"/>
+					<ItemData ItemOID="cog_3" Value="6.2"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-15"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="4.9"/>
+					<ItemData ItemOID="cog_3" Value="6"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-22"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="4.8"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-04-20"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="5.1"/>
+					<ItemData ItemOID="cog_3" Value="6"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-02"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="4.4"/>
+					<ItemData ItemOID="cog_3" Value="5.7"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-03-10"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="4.4"/>
+					<ItemData ItemOID="cog_3" Value="5.6"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2013-03-03"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.4"/>
+					<ItemData ItemOID="cog_2" Value="4.6"/>
+					<ItemData ItemOID="cog_3" Value="5.5"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.9"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2014-03-03"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="11.104"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.126"/>
+					<ItemData ItemOID="cog_1" Value="3.2"/>
+					<ItemData ItemOID="cog_2" Value="4.6"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1005" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1005"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="Unknown or Not Reported"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-04-09"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-04-05"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="0.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-04-20"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="5"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-04-23"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-18"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="5.1"/>
+					<ItemData ItemOID="phys_3" Value="0.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-05-01"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.3"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="5.4"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-04"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="4.1"/>
+					<ItemData ItemOID="cog_2" Value="5.6"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-11"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="7.1"/>
+					<ItemData ItemOID="phys_1" Value="4.1"/>
+					<ItemData ItemOID="phys_2" Value="4.8"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-12"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="5.2"/>
+					<ItemData ItemOID="cog_3" Value="6.8"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="5"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-17"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="14.472"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.228"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="6.4"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1006" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1006"/>
+					<ItemData ItemOID="county_id" Value="55"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="Unknown or Not Reported"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-01-31"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="7.8"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-02-05"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="0.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-17"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-04"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-09"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="0"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-14"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-25"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-02"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.9"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-03-10"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-02-22"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="12.98"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1007" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1007"/>
+					<ItemData ItemOID="county_id" Value="55"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="White"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-12"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="4.2"/>
+					<ItemData ItemOID="cog_3" Value="5.7"/>
+					<ItemData ItemOID="phys_1" Value="2.3"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-27"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="4.6"/>
+					<ItemData ItemOID="cog_3" Value="5.2"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="0.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-02"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="4.3"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="2.4"/>
+					<ItemData ItemOID="phys_2" Value="3.1"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-03"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="4.3"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-24"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.4"/>
+					<ItemData ItemOID="cog_2" Value="4.4"/>
+					<ItemData ItemOID="cog_3" Value="5.5"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-01"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="4.4"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="0.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-26"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="4.5"/>
+					<ItemData ItemOID="cog_3" Value="5.3"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-22"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="4.8"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-26"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="4.7"/>
+					<ItemData ItemOID="cog_3" Value="5.4"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-02-14"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="9.072"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.009"/>
+					<ItemData ItemOID="cog_1" Value="3.4"/>
+					<ItemData ItemOID="cog_2" Value="4.5"/>
+					<ItemData ItemOID="cog_3" Value="5.5"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1008" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1008"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="Asian"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-04-06"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-02-11"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-04-28"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-23"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-06"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-03-22"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="0.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-26"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="0.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-20"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-15"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-02-14"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="14.213"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.026"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1009" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1009"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="Native Hawaiian or Other Pacific Islander"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-04-02"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="7.8"/>
+					<ItemData ItemOID="phys_1" Value="2.1"/>
+					<ItemData ItemOID="phys_2" Value="2.6"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-03-16"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="7.7"/>
+					<ItemData ItemOID="phys_1" Value="2.4"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-04-21"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="7.7"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-04-20"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.4"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-24"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7.1"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-14"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.7"/>
+					<ItemData ItemOID="cog_3" Value="7.1"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="3.2"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-03-19"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-20"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="3.8"/>
+					<ItemData ItemOID="cog_2" Value="5"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-06"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="5.2"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-18"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="13.479"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.175"/>
+					<ItemData ItemOID="cog_1" Value="3.6"/>
+					<ItemData ItemOID="cog_2" Value="5.2"/>
+					<ItemData ItemOID="cog_3" Value="6.4"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1010" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1010"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-02-26"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.8"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="0.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-03-05"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-02-12"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="4.1"/>
+					<ItemData ItemOID="cog_2" Value="5.4"/>
+					<ItemData ItemOID="cog_3" Value="6.6"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-03"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="4.9"/>
+					<ItemData ItemOID="cog_3" Value="6.5"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="0"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-02"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="5"/>
+					<ItemData ItemOID="cog_3" Value="6.3"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="3.3"/>
+					<ItemData ItemOID="phys_3" Value="0.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-23"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="4.8"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="0.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-09"/>
+					<ItemData ItemOID="age" Value="80"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.4"/>
+					<ItemData ItemOID="cog_2" Value="4.7"/>
+					<ItemData ItemOID="cog_3" Value="5.8"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-02-25"/>
+					<ItemData ItemOID="age" Value="81"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.2"/>
+					<ItemData ItemOID="cog_2" Value="4.5"/>
+					<ItemData ItemOID="cog_3" Value="5.6"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-02"/>
+					<ItemData ItemOID="age" Value="82"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.2"/>
+					<ItemData ItemOID="cog_2" Value="4.2"/>
+					<ItemData ItemOID="cog_3" Value="5.5"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-02-28"/>
+					<ItemData ItemOID="age" Value="83"/>
+					<ItemData ItemOID="int_factor_1" Value="11.746"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.176"/>
+					<ItemData ItemOID="cog_1" Value="3.1"/>
+					<ItemData ItemOID="cog_2" Value="4.3"/>
+					<ItemData ItemOID="cog_3" Value="5.1"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="2.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1011" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1011"/>
+					<ItemData ItemOID="county_id" Value="55"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="Native Hawaiian or Other Pacific Islander"/>
+					<ItemData ItemOID="ethnicity" Value="Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-03-01"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="7.8"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="0.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-13"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.5"/>
+					<ItemData ItemOID="cog_3" Value="7.8"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-15"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="7.7"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="0.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-26"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-21"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-19"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="7.5"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-31"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="7.7"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-02-10"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="2.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-03-25"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7.5"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-03-02"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="13.047"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.037"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.6"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1012" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1012"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="American Indian/Alaska Native"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-05"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-21"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="0.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-26"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-15"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-19"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-14"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-03"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-01"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.3"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-03-12"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-03-04"/>
+					<ItemData ItemOID="age" Value="80"/>
+					<ItemData ItemOID="int_factor_1" Value="14.151"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.024"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1013" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1013"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-03-07"/>
+					<ItemData ItemOID="age" Value="58"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-02-04"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.8"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-03-03"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.6"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-20"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.4"/>
+					<ItemData ItemOID="cog_3" Value="6.6"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-02-21"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="4.1"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.3"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-17"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="5.6"/>
+					<ItemData ItemOID="cog_3" Value="6.4"/>
+					<ItemData ItemOID="phys_1" Value="3.8"/>
+					<ItemData ItemOID="phys_2" Value="4.9"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-13"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="4.9"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="3.9"/>
+					<ItemData ItemOID="phys_2" Value="5"/>
+					<ItemData ItemOID="phys_3" Value="2.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-14"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="4.7"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="3.9"/>
+					<ItemData ItemOID="phys_2" Value="5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-08"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="4.5"/>
+					<ItemData ItemOID="cog_3" Value="5.9"/>
+					<ItemData ItemOID="phys_1" Value="4.2"/>
+					<ItemData ItemOID="phys_2" Value="4.9"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-04"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="11.745"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.124"/>
+					<ItemData ItemOID="cog_1" Value="3.4"/>
+					<ItemData ItemOID="cog_2" Value="4.4"/>
+					<ItemData ItemOID="cog_3" Value="5.9"/>
+					<ItemData ItemOID="phys_1" Value="4.3"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1014" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1014"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="Unknown or Not Reported"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-02-23"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.6"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.4"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-03-23"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.7"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-03-18"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-02-15"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-06"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-06"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="5"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-24"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-04-22"/>
+					<ItemData ItemOID="age" Value="80"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.3"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-02-22"/>
+					<ItemData ItemOID="age" Value="81"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="5.7"/>
+					<ItemData ItemOID="cog_3" Value="7.1"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="1.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-05-01"/>
+					<ItemData ItemOID="age" Value="82"/>
+					<ItemData ItemOID="int_factor_1" Value="11.236"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.046"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="7.4"/>
+					<ItemData ItemOID="phys_1" Value="4"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1015" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1015"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="American Indian/Alaska Native"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2000-02-12"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="5.7"/>
+					<ItemData ItemOID="phys_1" Value="2.3"/>
+					<ItemData ItemOID="phys_2" Value="3"/>
+					<ItemData ItemOID="phys_3" Value="0.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2001-02-02"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="3.8"/>
+					<ItemData ItemOID="cog_2" Value="4.9"/>
+					<ItemData ItemOID="cog_3" Value="6"/>
+					<ItemData ItemOID="phys_1" Value="2.4"/>
+					<ItemData ItemOID="phys_2" Value="3.3"/>
+					<ItemData ItemOID="phys_3" Value="0.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-04-12"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="3.8"/>
+					<ItemData ItemOID="cog_2" Value="4.8"/>
+					<ItemData ItemOID="cog_3" Value="5.9"/>
+					<ItemData ItemOID="phys_1" Value="2.4"/>
+					<ItemData ItemOID="phys_2" Value="2.7"/>
+					<ItemData ItemOID="phys_3" Value="0.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-06"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5"/>
+					<ItemData ItemOID="cog_3" Value="5.8"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.2"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-26"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="4.5"/>
+					<ItemData ItemOID="cog_3" Value="6"/>
+					<ItemData ItemOID="phys_1" Value="2.4"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-12"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="4.9"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-03"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4.1"/>
+					<ItemData ItemOID="cog_2" Value="5.1"/>
+					<ItemData ItemOID="cog_3" Value="6"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.1"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-02-03"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-10"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="2.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-28"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="9.703"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.028"/>
+					<ItemData ItemOID="cog_1" Value="4.4"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="6.1"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.1"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1016" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1016"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-02-02"/>
+					<ItemData ItemOID="age" Value="56"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.6"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-02-24"/>
+					<ItemData ItemOID="age" Value="57"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-09"/>
+					<ItemData ItemOID="age" Value="58"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="0.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-17"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.4"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-03-22"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-03-22"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.2"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-01"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-15"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="2.2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-14"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.9"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-03-29"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="12.995"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.056"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.8"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1017" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1017"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="Unknown or Not Reported"/>
+					<ItemData ItemOID="ethnicity" Value="Unknown/Not Reported Ethnicity"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-04-08"/>
+					<ItemData ItemOID="age" Value="58"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="5.1"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.5"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3.2"/>
+					<ItemData ItemOID="phys_3" Value="0.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-30"/>
+					<ItemData ItemOID="age" Value="59"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="2.5"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="0.8"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-02-19"/>
+					<ItemData ItemOID="age" Value="60"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="5.5"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-29"/>
+					<ItemData ItemOID="age" Value="61"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.7"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.5"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-04-12"/>
+					<ItemData ItemOID="age" Value="62"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="3.3"/>
+					<ItemData ItemOID="phys_3" Value="0.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-01"/>
+					<ItemData ItemOID="age" Value="63"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.3"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.2"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-30"/>
+					<ItemData ItemOID="age" Value="64"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.7"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-03-01"/>
+					<ItemData ItemOID="age" Value="65"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5.6"/>
+					<ItemData ItemOID="cog_3" Value="6.8"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-04-19"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="3.9"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="6.4"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="2.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-02-03"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="12.612"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.121"/>
+					<ItemData ItemOID="cog_1" Value="3.7"/>
+					<ItemData ItemOID="cog_2" Value="5.3"/>
+					<ItemData ItemOID="cog_3" Value="6.4"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1018" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1018"/>
+					<ItemData ItemOID="county_id" Value="51"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-27"/>
+					<ItemData ItemOID="age" Value="66"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.6"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-03-11"/>
+					<ItemData ItemOID="age" Value="67"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.5"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="3.8"/>
+					<ItemData ItemOID="phys_3" Value="0.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-26"/>
+					<ItemData ItemOID="age" Value="68"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.9"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="2.8"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-02-13"/>
+					<ItemData ItemOID="age" Value="69"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.7"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-03"/>
+					<ItemData ItemOID="age" Value="70"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.7"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.1"/>
+					<ItemData ItemOID="phys_3" Value="2.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-02-07"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.9"/>
+					<ItemData ItemOID="cog_2" Value="7.1"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.4"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-04-03"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.8"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.9"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-03-13"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.9"/>
+					<ItemData ItemOID="cog_2" Value="7.4"/>
+					<ItemData ItemOID="cog_3" Value="8.8"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-03-22"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="6"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.7"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.7"/>
+					<ItemData ItemOID="phys_3" Value="1.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2013-04-06"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="14.222"/>
+					<ItemData ItemOID="slope_factor_1" Value="0.016"/>
+					<ItemData ItemOID="cog_1" Value="5.8"/>
+					<ItemData ItemOID="cog_2" Value="7.2"/>
+					<ItemData ItemOID="cog_3" Value="8.4"/>
+					<ItemData ItemOID="phys_1" Value="4"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="2.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1019" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1019"/>
+					<ItemData ItemOID="county_id" Value="55"/>
+					<ItemData ItemOID="gender_id" Value="2"/>
+					<ItemData ItemOID="race" Value="More than One Race"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2002-04-07"/>
+					<ItemData ItemOID="age" Value="71"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3"/>
+					<ItemData ItemOID="phys_3" Value="0"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2003-01-31"/>
+					<ItemData ItemOID="age" Value="72"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-03-17"/>
+					<ItemData ItemOID="age" Value="73"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="5"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.6"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-25"/>
+					<ItemData ItemOID="age" Value="74"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="7.3"/>
+					<ItemData ItemOID="phys_1" Value="2.9"/>
+					<ItemData ItemOID="phys_2" Value="3.3"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-04-03"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="2.7"/>
+					<ItemData ItemOID="phys_2" Value="3.7"/>
+					<ItemData ItemOID="phys_3" Value="0.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-02-06"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.6"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="2.6"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-02-05"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.8"/>
+					<ItemData ItemOID="cog_2" Value="6"/>
+					<ItemData ItemOID="cog_3" Value="7.1"/>
+					<ItemData ItemOID="phys_1" Value="3.4"/>
+					<ItemData ItemOID="phys_2" Value="4"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-04-07"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.2"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="3.1"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-04-08"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.9"/>
+					<ItemData ItemOID="cog_2" Value="6.1"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="3.9"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-02"/>
+					<ItemData ItemOID="age" Value="80"/>
+					<ItemData ItemOID="int_factor_1" Value="11.853"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.001"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="6.3"/>
+					<ItemData ItemOID="cog_3" Value="6.9"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.2"/>
+					<ItemData ItemOID="phys_3" Value="2"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+	<SubjectData SubjectKey="1020" redcap:RecordIdField="patient_id">
+			<FormData FormOID="Form.patient" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="patient.patient_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_id" Value="1020"/>
+					<ItemData ItemOID="county_id" Value="72"/>
+					<ItemData ItemOID="gender_id" Value="1"/>
+					<ItemData ItemOID="race" Value="American Indian/Alaska Native"/>
+					<ItemData ItemOID="ethnicity" Value="Not Hispanic or Latino"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="patient.patient_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="patient_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2004-04-30"/>
+					<ItemData ItemOID="age" Value="75"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="5.7"/>
+					<ItemData ItemOID="cog_2" Value="7.4"/>
+					<ItemData ItemOID="cog_3" Value="8.9"/>
+					<ItemData ItemOID="phys_1" Value="3.3"/>
+					<ItemData ItemOID="phys_2" Value="4.5"/>
+					<ItemData ItemOID="phys_3" Value="1.1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="2">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2005-04-23"/>
+					<ItemData ItemOID="age" Value="76"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.8"/>
+					<ItemData ItemOID="cog_3" Value="8.6"/>
+					<ItemData ItemOID="phys_1" Value="3.6"/>
+					<ItemData ItemOID="phys_2" Value="4.6"/>
+					<ItemData ItemOID="phys_3" Value="0"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="3">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2006-02-05"/>
+					<ItemData ItemOID="age" Value="77"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="5.5"/>
+					<ItemData ItemOID="cog_2" Value="6.9"/>
+					<ItemData ItemOID="cog_3" Value="8.3"/>
+					<ItemData ItemOID="phys_1" Value="3.7"/>
+					<ItemData ItemOID="phys_2" Value="4.3"/>
+					<ItemData ItemOID="phys_3" Value="1.4"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="4">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2007-02-27"/>
+					<ItemData ItemOID="age" Value="78"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="5.2"/>
+					<ItemData ItemOID="cog_2" Value="6.4"/>
+					<ItemData ItemOID="cog_3" Value="8.1"/>
+					<ItemData ItemOID="phys_1" Value="3.2"/>
+					<ItemData ItemOID="phys_2" Value="5.3"/>
+					<ItemData ItemOID="phys_3" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="5">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2008-03-17"/>
+					<ItemData ItemOID="age" Value="79"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="5"/>
+					<ItemData ItemOID="cog_2" Value="6.7"/>
+					<ItemData ItemOID="cog_3" Value="7.9"/>
+					<ItemData ItemOID="phys_1" Value="3.5"/>
+					<ItemData ItemOID="phys_2" Value="5"/>
+					<ItemData ItemOID="phys_3" Value="1.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="6">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2009-03-11"/>
+					<ItemData ItemOID="age" Value="80"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="4.7"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.5"/>
+					<ItemData ItemOID="phys_1" Value="4.1"/>
+					<ItemData ItemOID="phys_2" Value="5.5"/>
+					<ItemData ItemOID="phys_3" Value="1.5"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="7">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2010-02-06"/>
+					<ItemData ItemOID="age" Value="81"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="4.5"/>
+					<ItemData ItemOID="cog_2" Value="5.9"/>
+					<ItemData ItemOID="cog_3" Value="7.2"/>
+					<ItemData ItemOID="phys_1" Value="3.9"/>
+					<ItemData ItemOID="phys_2" Value="5.8"/>
+					<ItemData ItemOID="phys_3" Value="1.9"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="8">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2011-02-16"/>
+					<ItemData ItemOID="age" Value="82"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="4.2"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="7"/>
+					<ItemData ItemOID="phys_1" Value="4.2"/>
+					<ItemData ItemOID="phys_2" Value="5.1"/>
+					<ItemData ItemOID="phys_3" Value="1.7"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="9">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2012-04-20"/>
+					<ItemData ItemOID="age" Value="83"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="4"/>
+					<ItemData ItemOID="cog_2" Value="5.8"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="4"/>
+					<ItemData ItemOID="phys_2" Value="5.4"/>
+					<ItemData ItemOID="phys_3" Value="2.6"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.appointment" FormRepeatKey="10">
+				<ItemGroupData ItemGroupOID="appointment.date_at_visit" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="date_at_visit" Value="2013-03-04"/>
+					<ItemData ItemOID="age" Value="84"/>
+					<ItemData ItemOID="int_factor_1" Value="15.131"/>
+					<ItemData ItemOID="slope_factor_1" Value="-0.242"/>
+					<ItemData ItemOID="cog_1" Value="3.5"/>
+					<ItemData ItemOID="cog_2" Value="5.2"/>
+					<ItemData ItemOID="cog_3" Value="6.7"/>
+					<ItemData ItemOID="phys_1" Value="4.4"/>
+					<ItemData ItemOID="phys_2" Value="5.6"/>
+					<ItemData ItemOID="phys_3" Value="2.3"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="appointment.appointment_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="appointment_complete" Value="0"/>
+				</ItemGroupData>
+			</FormData>
+	</SubjectData>
+</ClinicalData>
+</ODM>
