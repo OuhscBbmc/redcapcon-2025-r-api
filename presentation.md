@@ -252,7 +252,7 @@ Below, line 7 of the CSV with date-shifted values is shown.
 - **API Tokens**
   - Unique key linked to a specific **user _and_ project**
   - Tokens provide both,
-	- **AuthenticationÜÜ (like username + password) and
+	- **Authentication** (like username + password) and
 	- **Authorization** (role/user rights of the user in that specific project)
   - REDCap provides tools for token management (cycling, revocation, transfer)
   - Must be kept **secure** (details on token handling _outside of REDCap_ will follow later)
