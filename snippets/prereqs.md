@@ -15,7 +15,7 @@ Accessing REDCap Data via the API: Prerequisites
   - Instruments can be **repeatable**
 - **Longitudinal projects**
   - One or more arms with **events** (timepoints)
-  - Instruments assigned to one or multiple events 
+  - Instruments assigned to one or multiple events
   - Instruments/events can be **repeatable** (but instruments cannot repeat on repeating events)
 - **For data analysts**
   - Understanding project structure is essential
@@ -77,7 +77,7 @@ The screenshot below shows the part of the User Rights dialog that sets data vie
 - **Access considerations**
   - Reports respect user **viewing** rights when viewed inside REDCap
   - Reports respect **export** rights when exporting the data
-  - Access to a specific report can be limited to certain users/roles in the report settings 
+  - Access to a specific report can be limited to certain users/roles in the report settings
   - Data Access Group restrictions are always observed
 - **Exports**
   - Reports can be downloaded as CSV
@@ -91,7 +91,7 @@ However, that same report, exported as a CSV (either by downloading it, or by us
 
 ![](../images/report-exported-as-csv.png)
 
-Note: When exporting **de-identified** data from a report via CSV download, date field can either be removed or date-shifted. This option is not available for API exports, where date fields are always removed. 
+Note: When exporting **de-identified** data from a report via CSV download, date field can either be removed or date-shifted. This option is not available for API exports, where date fields are always removed.
 
 ![](../images/export-remove-vs-dateshift.png)
 
@@ -114,7 +114,7 @@ Below, line 7 of the CSV with date-shifted values is shown.
     - **Import/Update** (write data)
     - **External Modules API** (access EM-provided methods)
 - **API, API Playground, and API Documentation**
-  - Accessible from the _Applications_ menu:  
+  - Accessible from the _Applications_ menu:
     ![](../images/api-playground-menu.png)
   - Allows to request and then view/mangage the API token
   - Show available methods
@@ -133,7 +133,7 @@ Below, line 7 of the CSV with date-shifted values is shown.
 - **API Tokens**
   - Unique key linked to a specific **user _and_ project**
   - Tokens provide both,
-    - **AuthenticationÜÜ (like username + password) and
+    - **Authentication** (like username + password) and
     - **Authorization** (role/user rights of the user in that specific project)
   - REDCap provides tools for token management (cycling, revocation, transfer)
   - Must be kept **secure** (details on token handling _outside of REDCap_ will follow later)
