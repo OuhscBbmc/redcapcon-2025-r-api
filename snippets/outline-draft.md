@@ -25,10 +25,14 @@ Total time: **70m**
    1. Roll your own with redcapAPI/REDCapR
    1. REDCapTideR
 1. Writing (brief -Will)
-1. Other packages (brief -Will)
+1. Further Resources (Will)
+   1. Community is for REDCap admins, which many biostatisticians are not
+   1. [REDCap Tools](https://redcap-tools.github.io/projects/)
+   1. Stack Overflow [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
+   1. Reddit [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
+   1. Python and Ruby packages.
 1. REDCap API 2.0 (Günther)
    a. (Günther) 10m, Issues with API
-   a. Mention Python and Ruby tools.
 1. Closing
    1. Benjamin Nutter slide
    1. Q&A

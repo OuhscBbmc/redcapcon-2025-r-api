@@ -988,10 +988,10 @@ Writing
 
 {Insert from <snippets/writing.md>}
 
-Other packages
+Further Resources
 ------------
 
-{Insert from <snippets/other-packages.md>}
+{Insert from <snippets/resources.md>}
 
 REDCap API 2.0
 ------------
