@@ -22,6 +22,12 @@ Reddit
 
 * [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
 
+Your Local REDCap Admin
+------------
+
+* Can help you ....
+* REDCap Playground (see Günther's slides)
+
 Packages in Other Languages
 ------------
 
@@ -35,7 +41,7 @@ Other Packages in R
 ------------
 
 * [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna CHOP)
-* [REDCapTidieR](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise U Miami)
+* [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise U Miami)
 * [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim)
 * [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard)
 

@@ -22,7 +22,7 @@ Total time: **70m**
    1. REDCapTideR
 1. Writing (brief -Will)
 1. Further Resources (Will)
-   1. Community is for REDCap admins, which many biostatisticians are not
+   1. Community is for REDCap admins, which many biostaticians are not
    1. [REDCap Tools](https://redcap-tools.github.io/projects/)
    1. Stack Overflow [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
    1. Reddit [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
