@@ -1,12 +1,16 @@
 Draft of Outline from August Meeting
 ==============
 
+Authors: Shawn Garbett, 
+Günther Rezniczek, Geneva Marshall, Thomas Wilson, Will Beasley
+
 Total time: **70m**
 
 1. Introductions 1m
 1. Motivation (Günther) 5m
    1. vs csv
    1. vs writing your own R code with httr/RCurl
+   1. Reproducibility!
 1. Prereqs  (Günther)
     1. REDCap project exists
     1. user has access to
