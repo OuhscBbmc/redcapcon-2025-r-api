@@ -1,50 +1,56 @@
 Further Resources
 ==============
 
-Community
-------------
+Placeholder
+---------------------
 
-* <https://redcap.vumc.org/community>
-* Community is for REDCap admins, which many biostatisticians are not
+{So they headers are correct when pasting into presentation.md}
 
-REDCap Tools
-------------
+### Community
 
-* <https://redcap-tools.github.io/projects/>
+- <https://redcap.vumc.org/community>
+- Community is for REDCap admins, which many biostatisticians are not
 
-Stack Overflow
-------------
+### REDCap Tools
 
-* [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
+- <https://redcap-tools.github.io/projects/>
 
-Reddit
-------------
+### General Sites
 
-* [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
+- Stack Overflow: [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
 
-Your Local REDCap Admin
-------------
+  179 questions, with a lot of responses from [Aidan Wilson](https://github.com/jangari) & [Luke Stevens](https://github.com/lsgs)
 
-* Can help you ....
-* REDCap Playground (see Günther's slides)
+- Reddit: [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
 
-Packages in Other Languages
-------------
+- CRAN: [Web Technologies](https://cran.r-project.org/web/views/WebTechnologies.html) Task View
+
+  (I've put it under "Survey, Questionnaire, and Data Capture Tools")
+
+### Your Local REDCap Admins
+
+- Can help you
+  - if they know, or
+  - post a question to Community, or
+  - get you in touch with a friend at another institution.
+
+- REDCap Playground (see Günther's slides)
+
+### Packages in Other Languages
 
 Actively developed packages & their maintainers (who are here that you can talk to):
 
-* Python: [PyCap](https://github.com/redcap-tools/PyCap) (Paul Wildenhain CHOP)
-* PHP: [PHPCap](https://github.com/iuredcap/phpcap) (Jim Mullen U Indiana)
-* C#: [redcap-api](https://github.com/tranpl/redcap-api) (Michael Tran VCU)
+- Python: [PyCap](https://github.com/redcap-tools/PyCap) (Paul Wildenhain, CHOP)
+- PHP: [PHPCap](https://github.com/iuredcap/phpcap) (Jim Mullen, U Indiana)
+- C#: [redcap-api](https://github.com/tranpl/redcap-api) (Michael Tran, VCU)
 
-Other Packages in R
-------------
+### Other Packages in R
 
-* [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna CHOP)
-* [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise U Miami)
-* [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim)
-* [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard)
+- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna,  CHOP)
+- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami)
+- [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim, IGTP, Spain)
+- [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard, Aarhus U, Denmark)
 
-* Some other new packages that are new & exciting,
-  but I like to wait ~2 months to see if a package
+- Some other new packages that are new & exciting,
+  but I like to wait ~2 years to see if a package
   remains actively maintained.
