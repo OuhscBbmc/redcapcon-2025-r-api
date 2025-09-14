@@ -1,7 +1,7 @@
 Draft of Outline from August Meeting
 ==============
 
-Authors: Shawn Garbett, 
+Authors: Shawn Garbett,
 Günther Rezniczek, Geneva Marshall, Thomas Wilson, Will Beasley
 
 Total time: **70m**
@@ -34,5 +34,4 @@ Total time: **70m**
 1. REDCap API 2.0 (Günther)
    a. (Günther) 10m, Issues with API
 1. Closing
-   1. Benjamin Nutter slide
-   1. Q&A
+   1. Q & A
