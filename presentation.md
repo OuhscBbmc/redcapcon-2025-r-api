@@ -1,7 +1,7 @@
 R and Python package for REDCap API (beginner level)
 ======
 
-REDCapCon 2025
+REDCapCon September 2025
 
 - Shawn Garbett, Vanderbilt University, Dept of Biostatistics
 - Günther Rezniczek, Ruhr-Universität Bochum, Dept of Obstetrics and Gynecology
@@ -32,7 +32,6 @@ Total time: **70m**
    1. REDCapTideR
 1. Writing (brief -Will)
 1. REDCap API 2.0 (Günther)
-   a. (Günther) 10m, Issues with API
 1. Further Resources (Will)
    1. Community is for REDCap admins, which many biostaticians are not
    1. [REDCap Tools](https://redcap-tools.github.io/projects/)
@@ -71,7 +70,7 @@ Motivation - Working with REDCap Data
 - Connects directly to the REDCap project
 - Always retrieves the **latest version** of the data
 - Integrates into **R/Python scripts and workflows**
-- Can also epxort reports programmatically
+- Can also export reports programmatically
 - Automates repetitive steps and reduces errors
 - Ensures **reproducibility** through scripted pipelines
 
@@ -98,8 +97,8 @@ Motivation - Working with REDCap Data
   - Integrates directly into scripted workflows**
   - Supports reproducibility and automation even as the project changes**
 
-\* These issues could very well be detected through analyses _outside_ of REDCap
-\*\* Of course, metadata changes may required the scripted pipeline to be adapted
+- These issues could very well be detected through analyses _outside_ of REDCap
+  - Of course, metadata changes may required the scripted pipeline to be adapted
 
 ### Why do we care?
 
@@ -155,7 +154,7 @@ Accessing REDCap Data via the API: Prerequisites
 - **Data Dictionary**
   - CSV file describing all fields in a project
   - Includes field names, types, choices, validation rules
-  - Downloadable from project setup page (requiers _Project Design and Setup_ right) or **API** ("Export Metadata")
+  - Downloadable from project setup page (requires _Project Design and Setup_ right) or **API** ("Export Metadata")
 
 - **Codebook**
   - Rich, human-readable view of project metadata
@@ -453,7 +452,6 @@ hist(rca_1$weight)
 
 ```r
 summary(rca_1)
-> summary(rca_1)
 #>  record_id          name_first         name_last           address
 #> Length:5           Length:5           Length:5           Length:5
 #> Class :character   Class :character   Class :character   Class :character
@@ -475,27 +473,21 @@ summary(rca_1)
 #>                                                     Mean   :110.2   Mean   : 48
 #>                                                     3rd Qu.:180.0   3rd Qu.: 80
 #>                                                     Max.   :193.0   Max.   :104
-#>      bmi          comments           mugshot            health_complete
+#>    bmi          comments           mugshot            health_complete
 #> Min.   : 19.8   Length:5           Length:5           Incomplete:2
 #> 1st Qu.: 24.7   Class :character   Class :character   Unverified:1
 #> Median : 27.9   Mode  :character   Mode  :character   Complete  :2
 #> Mean   :110.9
 #> 3rd Qu.:204.1
 #> Max.   :277.8
-#>      race___1      race___2      race___3      race___4      race___5
+#>    race___1      race___2      race___3      race___4      race___5
 #> Unchecked:4   Unchecked:4   Unchecked:4   Unchecked:4   Unchecked:1
 #> Checked  :1   Checked  :1   Checked  :1   Checked  :1   Checked  :4
-#>
-#>
-#>
-#>
-#>      race___6                  ethnicity interpreter_needed
+#>    race___6                  ethnicity interpreter_needed
 #> Unchecked:4   Unknown / Not Reported:1   Mode :logical
 #> Checked  :1   NOT Hispanic or Latino:3   FALSE:3
 #>               Hispanic or Latino    :1   TRUE :1
 #>                                          NA's :1
-#>
-#>
 #> race_and_ethnicity_complete
 #> Incomplete:1
 #> Unverified:0
@@ -1455,8 +1447,12 @@ Actively developed packages & their maintainers (who are here that you can talk 
 
 ### Other Packages in R
 
-- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna,  CHOP)
-- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami)
+- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna, CHOP)
+
+  - Focuses on a tidy _grain_
+- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami) tomorrow 2pm biostat track
+
+  - Focuses on a cleaner _variables_
 - [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim, IGTP, Spain)
 - [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard, Aarhus U, Denmark)
 
@@ -1488,8 +1484,15 @@ Closing
 - Helps each other stay up-to-date w/ best practices & packages
 - <https://redcap.vumc.org/community/post.php?id=117300>
 
+### Contribute to Exising Packages
+
+- Both the foundation packages (redcapAPI & REDCapR), as well as the 2nd layer packages
+- Add vignettes, documentation, functions, parameters, & test cases
+- Find most packages at [REDCap Tools](https://redcap-tools.github.io/projects/)
+- There's no need to compete to be recognized.  It's not zero sum. Just be collaborative and folks here will embracee & help you make your own space to attack a problem that you know we'll all benefit from.
+
 ### Questions?
 
-Shawn Garbett: <shawn.garbett@vumc.org>
-Günther Rezniczek: <g.rezniczek@gmail.com>
-Will Beasley: <william-beasley@ou.edu>
+- Shawn Garbett: <shawn.garbett@vumc.org>
+- Günther Rezniczek: <g.rezniczek@gmail.com>
+- Will Beasley: <william-beasley@ou.edu>
