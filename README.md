@@ -1,11 +1,14 @@
-# redcapcon-2025-r-api
+## "R and Python package for REDCap API (beginner level)"
 
-R and Python package for REDCap API (beginner level)
+Please see our [presentation](presentation.md) for [2025 REDCapCon](https://redcap.link/redcapcon25).
 
-Please see our 2025 REDCapCon [presentation](presentation.md).
+- Shawn Garbett, 
+- Günther Rezniczek,
+- Will Beasley
 
-Possible Material to start with:
+## Other Materials 
+  
+  that might be useful to beginners:
 
-- [R/Medicine 2021](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html)
 - [REDCapCon ~2023](https://ouhscbbmc.github.io/REDCapR/articles/longitudinal-and-repeating.html)
-- [Example Projects hosted on OU's dev server](https://github.com/OuhscBbmc/REDCapR/blob/main/inst/misc/dev-2.credentials)
+- [R/Medicine 2021](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html)
