@@ -1010,6 +1010,10 @@ Further Resources
 ### REDCap Tools
 
 - <https://redcap-tools.github.io/projects/>
+- Libraries: discussed today
+- Common resources: eg, Language-agnostic API [Troubleshooter](https://ouhscbbmc.github.io/REDCapR/articles/TroubleshootingApiCalls.html) & FAQ
+- Code samples eg, [Paul Litwin](https://github.com/plitwin)'s trigger code for C#
+- Applications: eg, [Philip Chase](https://github.com/pbchase)'s [REDCap Custodian](https://ctsit.github.io/redcapcustodian/)
 
 ### General Sites
 
