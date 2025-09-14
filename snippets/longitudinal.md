@@ -5,9 +5,9 @@ longitudinal
 
 This section of the presentation pertains to reading REDCap records from a project that (a) has longitudinal events or (b) has a repeating measure.  The first section conceptually discusses how REDCap stores complex structures.  The remaining sections describe how to best retrieve complex structures with the [REDCapTidyieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) and [REDCapR](https://ouhscbbmc.github.io/REDCapR/) packages.
 
-* If you are new to R or REDCap, consider start with the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) and [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignettes and then return to this document.
-* If you are reading from a *simple* project, just call REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html).
-* If you want to perform some other operation (such as writing records to REDCap), review the [Reference of REDCapR functions](https://ouhscbbmc.github.io/REDCapR/reference/index.html) to see what is currently available.
+- If you are new to R or REDCap, consider start with the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) and [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignettes and then return to this document.
+- If you are reading from a *simple* project, just call REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html).
+- If you want to perform some other operation (such as writing records to REDCap), review the [Reference of REDCapR functions](https://ouhscbbmc.github.io/REDCapR/reference/index.html) to see what is currently available.
 
 If your REDCap project is longitudinal or contains repeating measures, a single call to the API (or a single export through the browser) will return a dataset that is not readily analyzed.  Instead, the dataset will resemble Table 5.  This isn't because of a software bug, but because you haven't told the software how you would like the data structured.
 
@@ -270,16 +270,16 @@ One call to a REDCap project will return a [supertibble](https://chop-cgtinforma
 
 When retrieving data from REDCap, we recommend calling [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) in many scenarios, such as:
 
-* you are new to managing or analyzing data with R, or
-* your analyses will require most of the dataset's rows or columns, or
-* you'd benefit from some of the auxiliary information in [REDCapTidieR's supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/REDCapTidieR.html#tidying-redcap-exports), such as the instrument's structure.  <!--Future version may provide more information, like the column and row count of each table.-->
+- you are new to managing or analyzing data with R, or
+- your analyses will require most of the dataset's rows or columns, or
+- you'd benefit from some of the auxiliary information in [REDCapTidieR's supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/REDCapTidieR.html#tidying-redcap-exports), such as the instrument's structure.  <!--Future version may provide more information, like the column and row count of each table.-->
 
 However we recommend calling [REDCapR](https://ouhscbbmc.github.io/REDCapR/) in other scenarios.  It could be worth calling REDCapR multiple times if:
 
-* you are performing some operation other than retrieving/reading data from REDCap,
-* you are comfortable with managing and analyzing data with R, or
-* your analyses require only a fraction of the data (such as (a) you need only the first event, or (b) the analyses don't involve most of the instruments), or
-* you want to specify the variables' data types with [`readr::cols()`](https://readr.tidyverse.org/reference/cols.html).
+- you are performing some operation other than retrieving/reading data from REDCap,
+- you are comfortable with managing and analyzing data with R, or
+- your analyses require only a fraction of the data (such as (a) you need only the first event, or (b) the analyses don't involve most of the instruments), or
+- you want to specify the variables' data types with [`readr::cols()`](https://readr.tidyverse.org/reference/cols.html).
 
 If in doubt, start with REDCapTidieR.  Escalate to REDCapR if your download time is too long and might be decreased by reducing the information retrieved from the server and transported across the network.
 
@@ -291,12 +291,12 @@ Even if you think you'll need REDCapR's low-level control, consider starting wit
 
 Finally, cull unwanted cells using the parameters of `REDCapR::redcap_read()`.  These data points will not even leave the REDCap instance, which will improve performance.  Some possible strategies include passing [arguments](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html#arguments) to
 
-* `forms`: this will retrieve only the specified instruments/forms.  Beginners should start here.  It is easy to conceptualize and usually has a big increase in speed for just a little development work.
-* `events`: this will retrieve only the desired events within a longitudinal project.  For instance if the analyses involve only the "intake" and "follow up #1" events, leave follow ups #2, #3, and #4 on the server.
-* `fields`: this is more granular than `forms`.  It can be combined with calls to `forms`, such as passing `"bmi"` to fields and `c("blood_pressure", "laboratory")` to forms.
-* `records`: in the example scenario, this will pluck individual patients and their associated events and repeating instances.  To be useful in research, it's usually combined with other REDCapR calls.  See the [Read a subset of records, conditioned on the values in some variables](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html#read-a-subset-of-records-conditioned-on-the-values-in-some-variables) section of REDCapR's [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignette.
-* `filter_logic`: this will leverage the observation values to limit the rows returned.  Because the underlying table does not index the obs values, this will be less computationally efficient than the options above.
-* `datetime_range_begin` & `datetime_range_end`: this will return only the records that have been created or modified during the specified window.
+- `forms`: this will retrieve only the specified instruments/forms.  Beginners should start here.  It is easy to conceptualize and usually has a big increase in speed for just a little development work.
+- `events`: this will retrieve only the desired events within a longitudinal project.  For instance if the analyses involve only the "intake" and "follow up #1" events, leave follow ups #2, #3, and #4 on the server.
+- `fields`: this is more granular than `forms`.  It can be combined with calls to `forms`, such as passing `"bmi"` to fields and `c("blood_pressure", "laboratory")` to forms.
+- `records`: in the example scenario, this will pluck individual patients and their associated events and repeating instances.  To be useful in research, it's usually combined with other REDCapR calls.  See the [Read a subset of records, conditioned on the values in some variables](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html#read-a-subset-of-records-conditioned-on-the-values-in-some-variables) section of REDCapR's [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignette.
+- `filter_logic`: this will leverage the observation values to limit the rows returned.  Because the underlying table does not index the obs values, this will be less computationally efficient than the options above.
+- `datetime_range_begin` & `datetime_range_end`: this will return only the records that have been created or modified during the specified window.
 
 Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected).
 
