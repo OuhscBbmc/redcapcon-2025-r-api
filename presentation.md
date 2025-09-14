@@ -999,17 +999,97 @@ Writing
 
 {Insert from <snippets/writing.md>}
 
-Further Resources
-------------
-
-{Insert from <snippets/resources.md>}
-
 REDCap API 2.0
 ------------
 
 {Insert from <snippets/redcap-api-2.md>}
 
+Further Resources
+------------
+
+### Community
+
+- <https://redcap.vumc.org/community>
+- Community is for REDCap admins, which many biostatisticians are not
+
+### REDCap Tools
+
+- <https://redcap-tools.github.io/projects/>
+- Libraries: discussed today
+- Common resources: eg, Language-agnostic API [Troubleshooter](https://ouhscbbmc.github.io/REDCapR/articles/TroubleshootingApiCalls.html) & FAQ
+- Code samples eg, [Paul Litwin](https://github.com/plitwin)'s trigger code for C#
+- Applications: eg, [Philip Chase](https://github.com/pbchase)'s [REDCap Custodian](https://ctsit.github.io/redcapcustodian/)
+
+### General Sites
+
+- Stack Overflow: [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
+
+  179 questions, with a lot of responses from [Aidan Wilson](https://github.com/jangari) & [Luke Stevens](https://github.com/lsgs)
+
+- Reddit: [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
+
+- CRAN: [Web Technologies](https://cran.r-project.org/web/views/WebTechnologies.html) Task View
+
+  (I've put it under "Survey, Questionnaire, and Data Capture Tools")
+
+### Your Local REDCap Admins
+
+- Can help you
+  - if they know, or
+  - post a question to Community, or
+  - get you in touch with a friend at another institution.
+
+- REDCap Playground (see Günther's slides)
+
+### Packages in Other Languages
+
+Actively developed packages & their maintainers (who are here that you can talk to):
+
+- Python: [PyCap](https://github.com/redcap-tools/PyCap) (Paul Wildenhain, CHOP)
+
+  - Initially started by [Scott Burns](https://github.com/sburns) while at Vanderbilt
+
+- PHP: [PHPCap](https://github.com/iuredcap/phpcap) (Jim Mullen, U Indiana)
+
+- C#: [redcap-api](https://github.com/tranpl/redcap-api) (Michael Tran, VCU)
+
+### Other Packages in R
+
+- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna,  CHOP)
+- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami)
+- [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim, IGTP, Spain)
+- [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard, Aarhus U, Denmark)
+
+- Some other new packages that are new & exciting,
+  but I like to wait ~2 years to see if a package
+  remains actively maintained.
+
 Closing
 ------------
 
-{Insert from <snippets/closing.md>}
+### API & Human Connections
+
+- We've spent an hour on the basics of REDCap connections.
+- Please reach out to others at meals & after the conference
+
+### RAISE
+
+- "REDCap and R for Increasing Scientific Efficiency"
+- To join the monthly meeting: <https://redcap.link/RAISE_Membership>
+- or email Chris Battiston with question: <chris.battiston@wchospital.ca>
+- <https://redcap.vumc.org/community/post.php?id=260867>
+
+### Security Committee
+
+- Committee that develops "Best Practices for Token Management"
+- Goal: reach a consensus on acceptable approaches and include our recommendations in a few places like the API documentation, Community, and package/library documentation.
+- Helps new API sties get started
+- Helps established API sites gain trust from their org's security team.
+- Helps each other stay up-to-date w/ best practices & packages
+- <https://redcap.vumc.org/community/post.php?id=117300>
+
+### Questions?
+
+Shawn Garbett: <shawn.garbett@vumc.org>
+Günther Rezniczek: <g.rezniczek@gmail.com>
+Will Beasley: <william-beasley@ou.edu>
