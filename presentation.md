@@ -999,6 +999,11 @@ Writing
 
 {Insert from <snippets/writing.md>}
 
+REDCap API 2.0
+------------
+
+{Insert from <snippets/redcap-api-2.md>}
+
 Further Resources
 ------------
 
@@ -1054,11 +1059,6 @@ Actively developed packages & their maintainers (who are here that you can talk 
 - Some other new packages that are new & exciting,
   but I like to wait ~2 years to see if a package
   remains actively maintained.
-
-REDCap API 2.0
-------------
-
-{Insert from <snippets/redcap-api-2.md>}
 
 Closing
 ------------
