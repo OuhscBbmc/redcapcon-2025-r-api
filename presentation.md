@@ -254,13 +254,13 @@ Below, line 7 of the CSV with date-shifted values is shown.
   - Provides concrete code snippets for various programming languages
 
     Screenshot of a user's API management page in a project:
-    ![](./images/request-api-token.png)
+    ![request-api-token](./images/request-api-token.png)
 
     Once an API token has been created, it can be viewed and managed:
-    ![](./images/api-token-view-and-manage.png)
+    ![api-token-view-and-manage](./images/api-token-view-and-manage.png)
 
     Interactive API method calls executed in the API Playground are shown as code:
-    ![](./images/interactive-method-as-code.png)
+    ![interactive-method-as-code](./images/interactive-method-as-code.png)
 
 - **API Tokens**
   - Unique key linked to a specific **user _and_ project**
@@ -347,7 +347,7 @@ rcr_1
 hist(rcr_1$weight)
 ```
 
-![](./images/histogram-weight.png)
+![histogram-weight](./images/histogram-weight.png)
 
 ```{r}
 summary(rcr_1)
@@ -443,7 +443,7 @@ head(rca_1)
 hist(rca_1$weight)
 ```
 
-![](./images/histogram-weight.png)
+![histogram-weight](./images/histogram-weight.png)
 
 ```{r}
 summary(rca_1)
@@ -603,7 +603,6 @@ REDCapR::redcap_read(
 
 Similar limitations of a query exist for `events` and `forms`.
 
-
 Security
 ------------
 
@@ -664,11 +663,11 @@ A plain text file with ones password on a laptop is a risk if that laptop is sto
 
 Working with cryptography and security is in general more difficult than just writing the API_KEY into a file. The knowledge required, and coding, much less knowledge of best practices can be challenging. What's needed is a solution that does the following:
 
-* Follows best security practices possible.
-* Usage is easier than self management of a key.
-* Works in automated environments with _no code changes_.
-* Works for Windows, Mac and Linux.
-* Works inside RStudio and command line.
+- Follows best security practices possible.
+- Usage is easier than self management of a key.
+- Works in automated environments with _no code changes_.
+- Works for Windows, Mac and Linux.
+- Works inside RStudio and command line.
 
 This is a tall bill of goods to accomplish, but it's available in the R package [`shelter`][3]. It took three years of user feedback and design to hit these goals, and this is now available with a simple interface for any API_KEY desired. It utilizes an encrypted key ring to store API keys to disk using encryption. Thus API keys only exist in memory unencrypted and go away when a session is closed (*assuming R isn't saving session to disk which defeats the point of encryption*!!!).
 
@@ -697,11 +696,11 @@ The `url` argument specifies the remote url/uri utilized for the connection.
 
 The first time this is run, it will ask for a password for the key ring. Later executions of the command will ask for the password to unlock the key ring.
 
-![](./images/shelter-password.png)
+![shelter-password](./images/shelter-password.png)
 
 If a given API key is not found in the key ring, the user will be prompted for the named API key. Then it will test that key to see if it is valid.
 
-![](./images/shelter-apikey.png)
+![shelter-apikey](./images/shelter-apikey.png)
 
 If validation succeeds it will return that object to the environment, if it fails it will ask again. If an API key for a project changes, it will detect this as a failure when it tries to open and ask for that key again.
 
@@ -776,16 +775,16 @@ Create a custom database to store tokens. See [writeup](https://ouhscbbmc.github
 
 ## Takeaway on Security
 
-Good security around sensitive data doesn't have to be difficult, and now one is equipped with practical and easy means to prevent key leakage. Utilizing `shelter::unlockKeys` or `redcapAPI::unlockREDCap` has an additional advantage that it works well with automated environments creating a seemless transition to an automated report system. A sys admin may utilize overriding the interactive bits of `shelter` by providing system level ENV variables or a local yaml key file. Thus with a simple call one is now enhancing security *and* preparing for automated reporting.
+Good security around sensitive data doesn't have to be difficult, and now one is equipped with practical and easy means to prevent key leakage. Utilizing `shelter::unlockKeys` or `redcapAPI::unlockREDCap` has an additional advantage that it works well with automated environments creating a seemless transition to an automated report system. A sys admin may utilize overriding the interactive bits of `shelter` by providing system level ENV variables or a local yaml key file. Thus with a simple call one is now enhancing security _and_ preparing for automated reporting.
 
 If you have automation needs have your sys admin email on of the authors of the `shelter` package. Details will be provided.
 
 ### References
 
-* [1]: Toulas B (2023). "Over 12 million auth secrets and keys leaked on GitHub in 2023." https://www.bleepingcomputer.com/news/security/
+- [1]: Toulas B (2023). "Over 12 million auth secrets and keys leaked on GitHub in 2023." https://www.bleepingcomputer.com/news/security/
 over-12-million-auth-secrets-and-keys-leaked-on-github-in-2023/
-* [2]: (2024). Federal Register, (2024-17446), 64815\u201364832.
-* [3]: [CRAN: shelter](https://cran.r-project.org/package=shelter)
+- [2]: (2024). Federal Register, (2024-17446), 64815\u201364832.
+- [3]: [CRAN: shelter](https://cran.r-project.org/package=shelter)
 
 
 Type Theory (type casting)
@@ -799,7 +798,7 @@ Type casting is the conversion from one data type into another in a computer. Al
 
 $f : A \rightarrow B$ denotes a function, $f$ in type theory is a function that converts something of type $A$ into something of type $B$. The value of automatically evaluating and checking this has become very important in computer science. However, the idea has become incredibly important in mathematics as well. Betrand Russell published *Principia Mathematica* in 1910 seeking to find a single foundation for all of mathematics. He settled on set theory and it had 18 axioms, small formal assumptions, which it was based on. In this system it takes about 300 pages of math to show that 1+1=2. Godel's famous incompleteness theorem in 1929 was a huge blow to the goals of finding a single system that all mathematics could be based upon--as any such system must forever remain incomplete. Type theory in computers began making theoretical advances in the 1960's, a system Russell had initially considered. Voevodsky in 2006 showed a homotopy between $\lambda$-calculus, algebraic topology and type theory which is homotopy type theory (HoTT). In this foundation only 2 axioms are required to bootstrap mathematics and a short few pages to show 1+1=2. Russell's vision from a century before has been realized. One of those axioms, is the existence of a path between two points $A$ and $B$ which is represented by $f : A \rightarrow B$, thus making type casting one of the deepest philosophical entities in mathematics!
 
-![](./images/type-theory.png){width=400px}
+![type-theory](./images/type-theory.png){width=400px}
 
 Fortunately, a REDCap user's needs are simpler--and the API developers have you covered. However, it is not as simple as it sounds. All data stored in REDCap is character or string. In the computer, an analyst wants dates, numbers, factors or potentially some other data type the authors of `REDCapR` and `redcapAPI` have never heard of. To further complicate matters data can be missing under a variety of definitions and it might be invalid as user input may have been changed from free form to date specified in the middle of data collection leading to a huge number of uninterpretable date values.
 
@@ -950,7 +949,7 @@ A rare issue that has occurred in practice is that of a variable that has zero c
 
 ## Sparse Block Matrix Form
 
-![](./images/block_sparse.png)
+![block_sparse](./images/block_sparse.png)
 
 Another issue in play is the context in which exporting data from REDCap without restriction to a form means that every column for every form has a value. This results in a block sparse format with the majority of the data being NULL and potentially thousands of columns wide. It's best to filter and extract these down to the relevant forms.
 
