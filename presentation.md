@@ -15,15 +15,12 @@ Total time: **70m**
 
 1. Introductions 1m
 1. Motivation (Günther) 5m
-   1. vs Excel/csv
+   1. vs csv
    1. vs writing your own R code with httr/RCurl
    1. Reproducibility!
 1. Prereqs  (Günther)
     1. REDCap project exists
-    1. user has access to
-       1. project,
-       1. codebook,
-       1. api key
+    1. user access to
     1. dev machine has R & redcapAPI/REDCapR
 1. Basic Introduction redcapAPI/REDCapR (sg) 10m (unstructured)
 1. Security (sg) 5m (shelter)
@@ -32,13 +29,19 @@ Total time: **70m**
    1. Roll your own with redcapAPI/REDCapR
    1. REDCapTideR
 1. Writing (brief -Will)
-1. Other packages (brief -Will)
 1. REDCap API 2.0 (Günther)
    a. (Günther) 10m, Issues with API
-   a. Mention Python and Ruby tools.
+1. Further Resources (Will)
+   1. Community is for REDCap admins, which many biostaticians are not
+   1. [REDCap Tools](https://redcap-tools.github.io/projects/)
+   1. Stack Overflow [redcap](https://stackoverflow.com/questions/tagged/redcap) tag
+   1. Reddit [ProjectREDCap](https://www.reddit.com/r/ProjectREDCap/) subreddit
+   1. Python and Ruby packages.
 1. Closing
-   1. Benjamin Nutter slide
-   1. Q&A
+   1. API & Human Connections
+   1. RAISE
+   1. Security Committee
+   1. Questions?
 
 Motivation - Working with REDCap Data
 ------------
@@ -251,13 +254,13 @@ Below, line 7 of the CSV with date-shifted values is shown.
   - Provides concrete code snippets for various programming languages
 
     Screenshot of a user's API management page in a project:
-    ![](./images/request-api-token.png)
+    ![request-api-token](./images/request-api-token.png)
 
     Once an API token has been created, it can be viewed and managed:
-    ![](./images/api-token-view-and-manage.png)
+    ![api-token-view-and-manage](./images/api-token-view-and-manage.png)
 
     Interactive API method calls executed in the API Playground are shown as code:
-    ![](./images/interactive-method-as-code.png)
+    ![interactive-method-as-code](./images/interactive-method-as-code.png)
 
 - **API Tokens**
   - Unique key linked to a specific **user _and_ project**
@@ -344,7 +347,7 @@ rcr_1
 hist(rcr_1$weight)
 ```
 
-![](./images/histogram-weight.png)
+![histogram-weight](./images/histogram-weight.png)
 
 ```{r}
 summary(rcr_1)
@@ -440,7 +443,7 @@ head(rca_1)
 hist(rca_1$weight)
 ```
 
-![](./images/histogram-weight.png)
+![histogram-weight](./images/histogram-weight.png)
 
 ```{r}
 summary(rca_1)
@@ -600,7 +603,6 @@ REDCapR::redcap_read(
 
 Similar limitations of a query exist for `events` and `forms`.
 
-
 Security
 ------------
 
@@ -661,11 +663,11 @@ A plain text file with ones password on a laptop is a risk if that laptop is sto
 
 Working with cryptography and security is in general more difficult than just writing the API_KEY into a file. The knowledge required, and coding, much less knowledge of best practices can be challenging. What's needed is a solution that does the following:
 
-* Follows best security practices possible.
-* Usage is easier than self management of a key.
-* Works in automated environments with _no code changes_.
-* Works for Windows, Mac and Linux.
-* Works inside RStudio and command line.
+- Follows best security practices possible.
+- Usage is easier than self management of a key.
+- Works in automated environments with _no code changes_.
+- Works for Windows, Mac and Linux.
+- Works inside RStudio and command line.
 
 This is a tall bill of goods to accomplish, but it's available in the R package [`shelter`][3]. It took three years of user feedback and design to hit these goals, and this is now available with a simple interface for any API_KEY desired. It utilizes an encrypted key ring to store API keys to disk using encryption. Thus API keys only exist in memory unencrypted and go away when a session is closed (*assuming R isn't saving session to disk which defeats the point of encryption*!!!).
 
@@ -694,11 +696,11 @@ The `url` argument specifies the remote url/uri utilized for the connection.
 
 The first time this is run, it will ask for a password for the key ring. Later executions of the command will ask for the password to unlock the key ring.
 
-![](./images/shelter-password.png)
+![shelter-password](./images/shelter-password.png)
 
 If a given API key is not found in the key ring, the user will be prompted for the named API key. Then it will test that key to see if it is valid.
 
-![](./images/shelter-apikey.png)
+![shelter-apikey](./images/shelter-apikey.png)
 
 If validation succeeds it will return that object to the environment, if it fails it will ask again. If an API key for a project changes, it will detect this as a failure when it tries to open and ask for that key again.
 
@@ -773,16 +775,16 @@ Create a custom database to store tokens. See [writeup](https://ouhscbbmc.github
 
 ## Takeaway on Security
 
-Good security around sensitive data doesn't have to be difficult, and now one is equipped with practical and easy means to prevent key leakage. Utilizing `shelter::unlockKeys` or `redcapAPI::unlockREDCap` has an additional advantage that it works well with automated environments creating a seemless transition to an automated report system. A sys admin may utilize overriding the interactive bits of `shelter` by providing system level ENV variables or a local yaml key file. Thus with a simple call one is now enhancing security *and* preparing for automated reporting.
+Good security around sensitive data doesn't have to be difficult, and now one is equipped with practical and easy means to prevent key leakage. Utilizing `shelter::unlockKeys` or `redcapAPI::unlockREDCap` has an additional advantage that it works well with automated environments creating a seemless transition to an automated report system. A sys admin may utilize overriding the interactive bits of `shelter` by providing system level ENV variables or a local yaml key file. Thus with a simple call one is now enhancing security _and_ preparing for automated reporting.
 
 If you have automation needs have your sys admin email on of the authors of the `shelter` package. Details will be provided.
 
 ### References
 
-* [1]: Toulas B (2023). "Over 12 million auth secrets and keys leaked on GitHub in 2023." https://www.bleepingcomputer.com/news/security/
+- [1]: Toulas B (2023). "Over 12 million auth secrets and keys leaked on GitHub in 2023." https://www.bleepingcomputer.com/news/security/
 over-12-million-auth-secrets-and-keys-leaked-on-github-in-2023/
-* [2]: (2024). Federal Register, (2024-17446), 64815\u201364832.
-* [3]: [CRAN: shelter](https://cran.r-project.org/package=shelter)
+- [2]: (2024). Federal Register, (2024-17446), 64815\u201364832.
+- [3]: [CRAN: shelter](https://cran.r-project.org/package=shelter)
 
 
 Type Theory (type casting)
@@ -796,7 +798,7 @@ Type casting is the conversion from one data type into another in a computer. Al
 
 $f : A \rightarrow B$ denotes a function, $f$ in type theory is a function that converts something of type $A$ into something of type $B$. The value of automatically evaluating and checking this has become very important in computer science. However, the idea has become incredibly important in mathematics as well. Betrand Russell published *Principia Mathematica* in 1910 seeking to find a single foundation for all of mathematics. He settled on set theory and it had 18 axioms, small formal assumptions, which it was based on. In this system it takes about 300 pages of math to show that 1+1=2. Godel's famous incompleteness theorem in 1929 was a huge blow to the goals of finding a single system that all mathematics could be based upon--as any such system must forever remain incomplete. Type theory in computers began making theoretical advances in the 1960's, a system Russell had initially considered. Voevodsky in 2006 showed a homotopy between $\lambda$-calculus, algebraic topology and type theory which is homotopy type theory (HoTT). In this foundation only 2 axioms are required to bootstrap mathematics and a short few pages to show 1+1=2. Russell's vision from a century before has been realized. One of those axioms, is the existence of a path between two points $A$ and $B$ which is represented by $f : A \rightarrow B$, thus making type casting one of the deepest philosophical entities in mathematics!
 
-![](./images/type-theory.png){width=400px}
+![type-theory](./images/type-theory.png){width=400px}
 
 Fortunately, a REDCap user's needs are simpler--and the API developers have you covered. However, it is not as simple as it sounds. All data stored in REDCap is character or string. In the computer, an analyst wants dates, numbers, factors or potentially some other data type the authors of `REDCapR` and `redcapAPI` have never heard of. To further complicate matters data can be missing under a variety of definitions and it might be invalid as user input may have been changed from free form to date specified in the middle of data collection leading to a huge number of uninterpretable date values.
 
@@ -947,7 +949,7 @@ A rare issue that has occurred in practice is that of a variable that has zero c
 
 ## Sparse Block Matrix Form
 
-![](./images/block_sparse.png)
+![block_sparse](./images/block_sparse.png)
 
 Another issue in play is the context in which exporting data from REDCap without restriction to a form means that every column for every form has a value. This results in a block sparse format with the majority of the data being NULL and potentially thousands of columns wide. It's best to filter and extract these down to the relevant forms.
 
@@ -992,12 +994,404 @@ Be aware that checkboxes will cause difficulties in getting data clean for analy
 Longitudinal
 ------------
 
-{Insert from <snippets/longitudinal.md>}
+### Background
+
+This section of the presentation pertains to reading REDCap records from a project that (a) has longitudinal events or (b) has a repeating measure.  The first section conceptually discusses how REDCap stores complex structures.  The remaining sections describe how to best retrieve complex structures with the [REDCapTidyieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) and [REDCapR](https://ouhscbbmc.github.io/REDCapR/) packages.
+
+- If you are new to R or REDCap, consider start with the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) and [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignettes and then return to this document.
+- If you are reading from a *simple* project, just call REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html).
+- If you want to perform some other operation (such as writing records to REDCap), review the [Reference of REDCapR functions](https://ouhscbbmc.github.io/REDCapR/reference/index.html) to see what is currently available.
+
+If your REDCap project is longitudinal or contains repeating measures, a single call to the API (or a single export through the browser) will return a dataset that is not readily analyzed.  Instead, the dataset will resemble Table 5.  This isn't because of a software bug, but because you haven't told the software how you would like the data structured.
+
+There isn't a good way to jam this multidimensional space into a rectangle of points.  Our advice for querying REDCap is the same as querying any database system: request separate datasets that have a natural "grain" and assemble them as to fit your analyses.
+
+### Illustration of How Data Points are Structured
+
+#### Possible Table Structures
+
+Suppose you have two patients (*i.e.*, "1" and "2") with three intake variables (*i.e.*, `height`, `weight`, and `bmi`).  If you record this on a piece of paper, it would probably look like Table 1.  The table's *grain* is "patient", because each row represents a distinct patient.  Understanding the grain of each structure below will help you understand how the structures are re-expressions of the same set of observations.
+
+##### Table 1: patient grain
+
+| pt<br>id | height | weight | bmi   |
+| :------: | :----: | :----: | :---: |
+|        1 |    1.0 |   11.0 | 111.0 |
+|        2 |    2.0 |   22.0 | 222.0 |
+
+This patient-grain structure is how the data points are most comfortably inputted by humans into REDCap, and it is the default when exported through the browser and API.  However it is stored differently by REDCap's internal database.
+
+REDCap's flexibility is a driver of its success.  Once a research team learns REDCap, it can reuse the knowledge to capture anything from leukemia to lunch orders.  But to achieve this flexibility in the world of REDCap and EMRs, data are stored along the observation grain.  In computer science, this is commonly called an EAV structure (which stands for entity-attribute-value).  The patient's ID is the entity, the variable type is the attribute, and the observed point is the value.  It can also be thought of as a "key-value store" nested within a patient (where "key" is a synonym of "attribute").  Notice that the two wider rows have morphed into six skinnier rows --one row per observation.  If you are a curious database administrator, peek at the the structure and rows of the `redcap_data` table.  It is the most important table in the database.
+
+##### Table 2: observation grain for `intake` instrument
+
+REDCap and EMR databases store observations in their underlying table.  This table is a simplification of the `redcap_data` table, which is the heart of the REDCap's internal database.
+
+| pt<br>id | key    | value |
+| :------: | :----- | ----: |
+|        1 | height |   1.0 |
+|        1 | weight |  11.0 |
+|        1 | bmi    | 111.0 |
+|        2 | height |   2.0 |
+|        2 | weight |  22.0 |
+|        2 | bmi    | 222.0 |
+
+If the investigation gains a longitudinal or repeating component, it becomes necessary to include the dimension of time.  Suppose the protocol specifies five time points; the blood pressure instrument is captured at times 1, 2, & 3 while the laboratory instrument is captured at times 1 & 2.  If you record this stage on paper, it will likely resemble Tables 3a & 3b: one for vitals and one for labs.
+
+##### Table 3a: patient-time grain for `blood_pressure` instrument
+
+| pt<br>id | time | sbp  | dbp  |
+| :------: | :--: | :--: | :--: |
+|        1 |    1 |  1.1 | 11.1 |
+|        1 |    2 |  1.2 | 11.2 |
+|        1 |    3 |  1.3 | 11.3 |
+|        2 |    1 |  2.1 | 22.1 |
+|        2 |    2 |  2.2 | 22.2 |
+|        2 |    3 |  2.3 | 22.3 |
+
+##### Table 3b: patient-time grain for `laboratory` instrument
+
+| pt<br>id | time | lab  | dose   |
+| :------: | :--: | :--: | :----: |
+|        1 |    1 |  aa1 | 1.1 mg |
+|        1 |    2 |  aa2 | 1.2 mg |
+|        2 |    1 |  bb1 | 2.1 mg |
+|        2 |    2 |  bb2 | 2.2 mg |
+
+When these measurements are added to REDCap's observation table, it resembles Table 4.  Two new columns are required to uniquely distinguish the instrument and its ordinal position.  Notice the first six rows are copied from Table 2; they have empty values for the repeating structure.
+
+##### Table 4: observation grain for `intake`, `blood_pressure`, and `laboratory` instruments
+
+| pt<br>id | repeat<br>instrument | repeat<br>instance | key    | value   |
+| :------: | :------------------- | :----------------: | :----- | ------: |
+|        1 | --                   |                 -- | height |     1.0 |
+|        1 | --                   |                 -- | weight |    11.0 |
+|        1 | --                   |                 -- | bmi    |   111.0 |
+|        2 | --                   |                 -- | height |     2.0 |
+|        2 | --                   |                 -- | weight |    22.0 |
+|        2 | --                   |                 -- | bmi    |   222.0 |
+|        1 | blood_pressure       |                  1 | sbp    |     1.1 |
+|        1 | blood_pressure       |                  1 | dbp    |    11.1 |
+|        1 | blood_pressure       |                  2 | sbp    |     1.2 |
+|        1 | blood_pressure       |                  2 | dbp    |    11.2 |
+|        1 | blood_pressure       |                  3 | sbp    |     1.3 |
+|        1 | blood_pressure       |                  3 | dbp    |    11.3 |
+|        1 | laboratory           |                  1 | lab    |     aa1 |
+|        1 | laboratory           |                  1 | conc   | 1.1 ppm |
+|        1 | laboratory           |                  2 | lab    |     aa2 |
+|        1 | laboratory           |                  2 | conc   | 1.2 ppm |
+|        2 | blood_pressure       |                  1 | sbp    |     2.1 |
+|        2 | blood_pressure       |                  1 | dbp    |    22.1 |
+|        2 | blood_pressure       |                  2 | sbp    |     2.2 |
+|        2 | blood_pressure       |                  2 | dbp    |    22.2 |
+|        2 | blood_pressure       |                  3 | sbp    |     2.3 |
+|        2 | blood_pressure       |                  3 | dbp    |    22.3 |
+|        2 | laboratory           |                  1 | lab    |     bb1 |
+|        2 | laboratory           |                  1 | conc   | 2.1 ppm |
+|        2 | laboratory           |                  2 | lab    |     bb2 |
+|        2 | laboratory           |                  2 | conc   | 2.2 ppm |
+
+As mentioned above, there isn't a universally good way to coerce Tables 1, 3a, and 3b into a single rectangle because the rows represent different things.  Or from REDCap's perspective, there's not a good transformation of `redcap_data` (*i.e.*, Table 4) that is appropriate for most statistical programs.
+
+When forced to combine the different entities, the best option is probably Table 5.  We call this a "block dataset", borrowing from linear algebra's [block matrix](https://mathworld.wolfram.com/BlockMatrix.html) term.  You can see the mishmash of tables masquerading as a unified dataset.  The rows lack the conceptual coherency of Tables 1, 3a, & 3b.
+
+##### Table 5: mishmashed grain
+
+| pt<br>id | repeat<br>instrument | repeat<br>instance | height | weight | bmi   | sbp  | dbp  | lab  | conc    |
+| :------: | :------------------- | :----------------: | :----: | :----: | :---: | :--: | :--: | :--: | :-----: |
+|        1 | --                   |                 -- |    1.0 |   11.0 | 111.0 |   -- |   -- |   -- |      -- |
+|        1 | blood_pressure       |                  1 |     -- |     -- |    -- |  1.1 | 11.1 |   -- |      -- |
+|        1 | blood_pressure       |                  2 |     -- |     -- |    -- |  1.2 | 11.2 |   -- |      -- |
+|        1 | blood_pressure       |                  3 |     -- |     -- |    -- |  1.3 | 11.3 |   -- |      -- |
+|        1 | laboratory           |                  1 |     -- |     -- |    -- |   -- |   -- |  aa1 | 1.1 ppm |
+|        1 | laboratory           |                  2 |     -- |     -- |    -- |   -- |   -- |  aa2 | 1.2 ppm |
+|        2 | --                   |                 -- |    2.0 |   22.0 | 222.0 |   -- |   -- |   -- |      -- |
+|        2 | blood_pressure       |                  1 |     -- |     -- |    -- |  2.1 | 22.1 |   -- |      -- |
+|        2 | blood_pressure       |                  2 |     -- |     -- |    -- |  2.2 | 22.2 |   -- |      -- |
+|        2 | blood_pressure       |                  3 |     -- |     -- |    -- |  2.3 | 22.3 |   -- |      -- |
+|        2 | laboratory           |                  1 |     -- |     -- |    -- |   -- |   -- |  bb1 | 2.1 ppm |
+|        2 | laboratory           |                  2 |     -- |     -- |    -- |   -- |   -- |  bb2 | 2.2 ppm |
+
+A block dataset is not inherently bad.  After all, Table 5 can be unambiguously transformed to and from Table 4.
+
+Table 5's primary limitation is that a block dataset is not understood by analysis software used in conventional medical research.  At best, the dataset always will require additional preparation.  At worst, the analyst will model the rows inappropriately, which will produce misleading conclusions.
+
+Table 5's secondary limitation is inefficiency.  The empty cells aren't computationally free.  Every cell must be queried from the database and concatenated in REDCap's web server in order to return Table 5 in the plain-text csv, json, or xml format.  In our simple example, more than half of the block dataset's cells are wasted.  The emptiness frequently exceeds 90% in real-world REDCap projects (because they tend to have many more variables and repeating instances).  The emptiness always exceeds 99.9% in real-world EMRs.
+
+For this reason, REDCap and EMR design their observation table to resemble the computational structure of a [sparse matrix](https://en.wikipedia.org/wiki/Sparse_matrix).  (The only important difference is that REDCap's unspecified cells are interpreted as null/empty, while a sparse matrix's unspecified cells are interpreted as zero.)
+
+> In the case of a sparse matrix, substantial memory requirement reductions can be realized by storing only the non-zero entries. Depending on the number and distribution of the non-zero entries, different data structures can be used and yield huge savings in memory when compared to the basic approach. The trade-off is that accessing the individual elements becomes more complex and additional structures are needed to be able to recover the original matrix unambiguously.
+> (source: [Wikipedia: Sparse matrix - storage](https://en.wikipedia.org/wiki/Sparse_matrix#Storage))
+
+#### Terminology
+
+##### observation
+
+The term "observation" in the world of [medical databases](https://ohdsi.github.io/CommonDataModel/cdm60.html#OBSERVATION) has a different and more granular meaning than it does in the [tidyverse literature](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1).  In REDCap and medical databases, an observation is typically a single point (such as a heart rate or systolic blood pressure) with contextual variables (such as the the associated date, unit, visit ID, and patient ID); see Tables 2 and 4 above.  In the tidyverse publications, an observation is roughly equivalent to a REDCap instrument (which is a collection of associated values); see Tables 1, 3a, and 3b.
+
+| Concept  | REDCap & Medical World | Tidyverse Literature |
+| :--- | :--------------------- | :------------------- |
+| A single measured point | observation | value |
+| A collection of associated points | instrument | observation |
+
+### Retrieving from REDCap
+
+Many new REDCap users will submit a single API call and unintentionally obtain something like Table 5; they then try to extract something resembling Tables 1, 3a, & 3b.  Although this can be successful, we strongly discourage it.  The code is difficult to maintain and is not portable to REDCap projects with different instruments.  (The code is really slow and ugly too.)
+
+Our advice is to start before Table 5 is assembled --retrieve the information in a better way.  Like other database systems, request the three tables separately from the server and then combine them on your desktop to fit your analyses if necessary.
+
+Two approaches are appropriate for most scenarios:
+
+1. multiple calls to REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html), or
+1. a single call to REDCapTidieR's [`redcap_read_tidy()`](https://chop-cgtinformatics.github.io/REDCapTidieR/reference/read_redcap_tidy.html).
+
+Today's presentation uses these credentials to retrieve the practice/fake dataset.  **This is not appropriate for datasets containing PHI or other sensitive information.**  Please see [Part 2 - Retrieve Protected Token](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html#part-2---retrieve-protected-token) of the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) vignette for secure approaches.
+
+Or even better, use something like Shawn's "shelter" package w/ PHI.
+For more context, Univ of Oklahoma uses a database as a foundation of a [token server](https://ouhscbbmc.github.io/REDCapR/articles/SecurityDatabase.html).
+As Shawn said, the token storage and retrieval is independent of the package (and almost of the programming language).
+
+```{r retrieve-credential}
+# Retrieve token, or even better use something like the shelter package for PHI
+path_credential <- system.file("misc/dev-2.credentials", package = "REDCapR")
+credential  <- REDCapR::retrieve_credential_local(
+  path_credential = path_credential,
+  project_id      = 62
+)
+```
+
+#### One REDCapR Call for Each Table
+
+The tidy datasets represented in Tables 1, 3a, and 3b can be obtained by calling REDCapR three times --one call per table.  Using the `forms` parameter, pass "intake" to get Table 1, "blood_pressure" to get Table 3a, and "laboratory" to get Table 3b.
+
+Although it is not required, we recommend specifying a [`readr::cols()`](https://readr.tidyverse.org/reference/cols.html) object to ensure the desired variable data types.
+
+##### Retrieve patient-level table (corresponding to Table 1)
+
+```{r redcapr-intake}
+col_types_intake <-
+  readr::cols_only(
+    record_id                 = readr::col_integer(),
+    height                    = readr::col_double(),
+    weight                    = readr::col_double(),
+    bmi                       = readr::col_double()
+  )
+
+ds_intake <-
+  REDCapR::redcap_read(
+    redcap_uri  = credential$redcap_uri, # From the previous code snippet.
+    token       = credential$token,
+    forms       = c("intake"),
+    col_types   = col_types_intake,
+    verbose     = FALSE,
+  )$data
+
+ds_intake
+```
+
+##### Retrieve patient-time-level tables (corresponding to Tables 3a & 3b)
+
+```{r redcapr-repeating}
+col_types_blood_pressure <-
+  readr::cols(
+    record_id                 = readr::col_integer(),
+    redcap_repeat_instrument  = readr::col_character(),
+    redcap_repeat_instance    = readr::col_integer(),
+    sbp                       = readr::col_double(),
+    dbp                       = readr::col_double(),
+    blood_pressure_complete   = readr::col_integer()
+  )
+
+ds_blood_pressure <-
+  REDCapR::redcap_read(
+    redcap_uri  = credential$redcap_uri,
+    token       = credential$token,
+    forms       = c("blood_pressure"),
+    col_types   = col_types_blood_pressure,
+    verbose     = FALSE
+  )$data
+
+ds_blood_pressure |>
+  tidyr::drop_na(redcap_repeat_instrument)
+
+col_types_laboratory  <-
+  readr::cols(
+    record_id                 = readr::col_integer(),
+    redcap_repeat_instrument  = readr::col_character(),
+    redcap_repeat_instance    = readr::col_integer(),
+    lab                       = readr::col_character(),
+    conc                      = readr::col_character(),
+    laboratory_complete       = readr::col_integer()
+  )
+
+ds_laboratory  <-
+  REDCapR::redcap_read(
+    redcap_uri  = credential$redcap_uri,
+    token       = credential$token,
+    forms       = c("laboratory"),
+    col_types   = col_types_laboratory,
+    verbose     = FALSE
+  )$data
+
+ds_laboratory |>
+  tidyr::drop_na(redcap_repeat_instrument)
+```
+
+##### Retrieve block tables (corresponding to Table 5)
+
+If for some reason you need the block dataset through the API, one call will retrieve it.
+
+```{r redcapr-block}
+ds_block <-
+  REDCapR::redcap_read(
+    redcap_uri  = credential$redcap_uri,
+    token       = credential$token,
+    col_types   = readr::cols(.default = readr::col_character()),
+    verbose     = FALSE,
+  )$data
+
+ds_block
+```
+
+#### One REDCapTidieR Call for All Tables
+
+[REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/)'s initial motivation is to facilitate longitudinal analyses and promote [tidy](https://r4ds.hadley.nz/data-tidy.html) data hygiene.
+
+One call to a REDCap project will return a [supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/REDCapTidieR.html#tidying-redcap-exports) that contains Tables 1, 3a, and 3b as separate tibbles within a list-column.
+
+#### Choosing between the Approaches
+
+When retrieving data from REDCap, we recommend calling [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) in many scenarios, such as:
+
+- you are new to managing or analyzing data with R, or
+- your analyses will require most of the dataset's rows or columns, or
+- you'd benefit from some of the auxiliary information in [REDCapTidieR's supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/REDCapTidieR.html#tidying-redcap-exports), such as the instrument's structure.  <!--Future version may provide more information, like the column and row count of each table.-->
+
+However we recommend calling [REDCapR](https://ouhscbbmc.github.io/REDCapR/) in other scenarios.  It could be worth calling REDCapR multiple times if:
+
+- you are performing some operation other than retrieving/reading data from REDCap,
+- you are comfortable with managing and analyzing data with R, or
+- your analyses require only a fraction of the data (such as (a) you need only the first event, or (b) the analyses don't involve most of the instruments), or
+- you want to specify the variables' data types with [`readr::cols()`](https://readr.tidyverse.org/reference/cols.html).
+
+If in doubt, start with REDCapTidieR.  Escalate to REDCapR if your download time is too long and might be decreased by reducing the information retrieved from the server and transported across the network.
+
+And of course many scenarios are solved best with a combination of both packages, such as (a) [REDCapR](https://ouhscbbmc.github.io/REDCapR/) populates the initial demographics in REDCap, (b) research staff enter measures collected from patients over time, (c) [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) retrieves the complete longitudinal dataset, (d) [dplyr](https://dplyr.tidyverse.org/) joins the tibbles, and finally (e) [lme4](https://cran.r-project.org/package=lme4/vignettes/lmer.pdf) tests hypotheses involving [patient trajectories](https://datascienceplus.com/analysing-longitudinal-data-multilevel-growth-models-i/) over time.
+
+#### Escalating to REDCapR
+
+Even if you think you'll need REDCapR's low-level control, consider starting with REDCapTidieR anyway.  ...particularly if you are unsure how to specify the grain of each table.  The structure of REDCapTidieR's tables easily compatible with conventional analyses.  If you need the performance of REDCapR but are unsure how the tables should look, simply execute something like `REDCapTidieR::redcap_read_tidy(url, project_token)` and study its output.  Then try to mimic it exactly with `REDCapR::redcap_read()` calls.
+
+Finally, cull unwanted cells using the parameters of `REDCapR::redcap_read()`.  These data points will not even leave the REDCap instance, which will improve performance.  Some possible strategies include passing [arguments](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html#arguments) to
+
+- `forms`: this will retrieve only the specified instruments/forms.  Beginners should start here.  It is easy to conceptualize and usually has a big increase in speed for just a little development work.
+- `events`: this will retrieve only the desired events within a longitudinal project.  For instance if the analyses involve only the "intake" and "follow up #1" events, leave follow ups #2, #3, and #4 on the server.
+- `fields`: this is more granular than `forms`.  It can be combined with calls to `forms`, such as passing `"bmi"` to fields and `c("blood_pressure", "laboratory")` to forms.
+- `records`: in the example scenario, this will pluck individual patients and their associated events and repeating instances.  To be useful in research, it's usually combined with other REDCapR calls.  See the [Read a subset of records, conditioned on the values in some variables](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html#read-a-subset-of-records-conditioned-on-the-values-in-some-variables) section of REDCapR's [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignette.
+- `filter_logic`: this will leverage the observation values to limit the rows returned.  Because the underlying table does not index the obs values, this will be less computationally efficient than the options above.
+- `datetime_range_begin` & `datetime_range_end`: this will return only the records that have been created or modified during the specified window.
+
+Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected).
+
+### Advanced
+
+#### Longitudinal
 
 Writing
 ------------
 
-{Insert from <snippets/writing.md>}
+### Writing to the server is more error prone than reading
+
+Mentality: start small & simple
+
+Test the water:
+
+- Start w/ a single patient & a few columns (eg, `record_id` & `gender`)
+- Slowly add more rows & columns
+
+And intermediate snippet might be:
+
+```r
+ds_patient |>
+  dplyr::select(              # First three columns
+    id_code,
+    date,
+    is_mobile,
+  ) |>
+  dplyr::slice(1:2) |>        # First two rows
+  REDCapR::redcap_write(
+    ds_to_write = _,
+    redcap_uri  = credential$redcap_uri,
+    token       = credential$token,
+    convert_logical_to_integer = TRUE
+  )
+```
+
+Strategy:
+
+- Upload the patient-level instrument(s)
+- Upload the each repeating instrument separately.
+
+### Gotchas
+
+- Client encoding & problematic non-ASCII characters
+
+- Recode Variables where necessary
+
+- Plumbing Variables (especially for repeating structures)
+
+  ```r
+  ds_daily <-
+    ds_daily |>
+    dplyr::group_by(id_code) |>
+    dplyr::mutate(
+      redcap_repeat_instrument  = "daily",
+      redcap_repeat_instance    = dplyr::row_number(da_date),
+      daily_complete            = REDCapR::constant("form_complete"),
+    ) |>
+    dplyr::ungroup() |>
+    dplyr::select(
+      id_code,                        # Or `record_id`, if you didn't rename it
+      # redcap_event_name,            # If the project is longitudinal or has arms
+      redcap_repeat_instrument,       # The name of the repeating instrument/form
+      redcap_repeat_instance,         # The sequence of the repeating instrument
+      tidyselect::everything(),       # All columns not explicitly passed to `dplyr::select()`
+      daily_complete,                 # Indicates incomplete, unverified, or complete
+    )
+  ```
+
+- Utilize Helper functions, eg
+
+  ```r
+  # Check for potential problems.  (Remember zero rows are good.)
+  REDCapR::validate_for_write(ds_daily, convert_logical_to_integer = TRUE)
+  ```
+
+### Next Steps
+
+- More Complexity
+  - eg, arms, longitudinal events
+
+- Batching
+
+- Manual vs API
+
+  If you have trouble uploading, consider adding a few fake patients & measurements and then download the csv. It might reveal something you didn’t anticipate. But be aware that it will be in the block matrix format (i.e., everything jammed into one rectangle.)
+
+- REDCap’s CDIS & Other interoperability
+
+  - See Stephany Duda et al's talk in 15 min: "REDCap + NIH: A Recipe for Innovation"
+  - See Adam's Birds of a Feather session 3:50pm today: "REDCap SHARE (Sharing Health Access for Research & Empowerment)"
+  - See Alex, Francesco, & Adam's talk 8:50am tomorrow: "EHR Integration: What's New & What's Next"
+
+  > The Clinical Data Interoperability Services (CDIS) use FHIR to move data from your institution’s EMR/EHR (eg, Epic, Cerner) to REDCap. Research staff have control over which patient records are selected or eligible. Conceptually it’s similar to writing to REDCap’s with the API, but at much bigger scale. Realistically, it takes months to get through your institution’s human layers. Once established, a project would be populated with EMR data in much less development time –assuming the desired data models corresponds with FHIR endpoints.
+
+### Resources for Writing/Importing
+
+- Language Agnostic Troubleshooter: <https://ouhscbbmc.github.io/REDCapR/articles/TroubleshootingApiCalls.html#writing>
+
+- REDCapR Writing Vignette:
+<https://ouhscbbmc.github.io/REDCapR/articles/workflow-write.html>
 
 REDCap API 2.0
 ------------
