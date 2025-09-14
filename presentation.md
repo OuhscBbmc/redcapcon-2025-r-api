@@ -1046,7 +1046,11 @@ Further Resources
 Actively developed packages & their maintainers (who are here that you can talk to):
 
 - Python: [PyCap](https://github.com/redcap-tools/PyCap) (Paul Wildenhain, CHOP)
+
+  - Initially started by [Scott Burns](https://github.com/sburns) while at Vanderbilt
+
 - PHP: [PHPCap](https://github.com/iuredcap/phpcap) (Jim Mullen, U Indiana)
+
 - C#: [redcap-api](https://github.com/tranpl/redcap-api) (Michael Tran, VCU)
 
 ### Other Packages in R
