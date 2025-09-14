@@ -2,6 +2,8 @@
 
 R and Python package for REDCap API (beginner level)
 
+Please see our 2025 REDCapCon [presentation](presentation.md).
+
 Possible Material to start with:
 
 - [R/Medicine 2021](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html)
