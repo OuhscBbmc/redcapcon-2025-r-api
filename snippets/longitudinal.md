@@ -3,7 +3,7 @@ longitudinal
 
 ### Background
 
-This vignette pertains to reading REDCap records from a project that (a) has longitudinal events or (b) has a repeating measure.  The first section conceptually discusses how REDCap stores complex structures.  The remaining sections describe how to best retrieve complex structures with the [REDCapTidyieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) and [REDCapR](https://ouhscbbmc.github.io/REDCapR/) packages.
+This section of the presentation pertains to reading REDCap records from a project that (a) has longitudinal events or (b) has a repeating measure.  The first section conceptually discusses how REDCap stores complex structures.  The remaining sections describe how to best retrieve complex structures with the [REDCapTidyieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) and [REDCapR](https://ouhscbbmc.github.io/REDCapR/) packages.
 
 * If you are new to R or REDCap, consider start with the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) and [Basic REDCapR Operations](https://ouhscbbmc.github.io/REDCapR/articles/BasicREDCapROperations.html) vignettes and then return to this document.
 * If you are reading from a *simple* project, just call REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html).
@@ -136,8 +136,6 @@ For this reason, REDCap and EMR design their observation table to resemble the c
 
 The term "observation" in the world of [medical databases](https://ohdsi.github.io/CommonDataModel/cdm60.html#OBSERVATION) has a different and more granular meaning than it does in the [tidyverse literature](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1).  In REDCap and medical databases, an observation is typically a single point (such as a heart rate or systolic blood pressure) with contextual variables (such as the the associated date, unit, visit ID, and patient ID); see Tables 2 and 4 above.  In the tidyverse publications, an observation is roughly equivalent to a REDCap instrument (which is a collection of associated values); see Tables 1, 3a, and 3b.
 
-(We use the medical terminology in this vignette.  We'd love to hear if someone has another term that's unambiguous.)
-
 | Concept  | REDCap & Medical World | Tidyverse Literature |
 | :--- | :--------------------- | :------------------- |
 | A single measured point | observation | value |
@@ -154,15 +152,14 @@ Two approaches are appropriate for most scenarios:
 1. multiple calls to REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html), or
 1. a single call to REDCapTidieR's [`redcap_read_tidy()`](https://chop-cgtinformatics.github.io/REDCapTidieR/reference/read_redcap_tidy.html).
 
-The code in the vignette requires the magrittr package for the `%>%` (alternatively you can use `|>` if you're using R 4.0.2 or later).
+Today's presentation uses these credentials to retrieve the practice/fake dataset.  **This is not appropriate for datasets containing PHI or other sensitive information.**  Please see [Part 2 - Retrieve Protected Token](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html#part-2---retrieve-protected-token) of the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) vignette for secure approaches.
 
-The vignette uses these credentials to retrieve the practice/fake dataset.  **This is not appropriate for datasets containing PHI or other sensitive information.**  Please see [Part 2 - Retrieve Protected Token](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html#part-2---retrieve-protected-token) of the [Typical REDCap Workflow for a Data Analyst](https://ouhscbbmc.github.io/REDCapR/articles/workflow-read.html) vignette for secure approaches.
+Or even better, use something like Shawn's "shelter" package w/ PHI.
+For more context, Univ of Oklahoma uses a database as a foundation of a [token server](https://ouhscbbmc.github.io/REDCapR/articles/SecurityDatabase.html).
+As Shawn said, the token storage and retrieval is independent of the package (and almost of the programming language).
 
 ```{r retrieve-credential}
-# Support pipes
-library(magrittr)
-
-# Retrieve token
+# Retrieve token, or even better use something like the shelter package for PHI
 path_credential <- system.file("misc/dev-2.credentials", package = "REDCapR")
 credential  <- REDCapR::retrieve_credential_local(
   path_credential = path_credential,
@@ -221,7 +218,7 @@ ds_blood_pressure <-
     verbose     = FALSE
   )$data
 
-ds_blood_pressure %>%
+ds_blood_pressure |>
   tidyr::drop_na(redcap_repeat_instrument)
 
 col_types_laboratory  <-
@@ -243,7 +240,7 @@ ds_laboratory  <-
     verbose     = FALSE
   )$data
 
-ds_laboratory %>%
+ds_laboratory |>
   tidyr::drop_na(redcap_repeat_instrument)
 ```
 
@@ -267,7 +264,7 @@ ds_block
 
 [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/)'s initial motivation is to facilitate longitudinal analyses and promote [tidy](https://r4ds.hadley.nz/data-tidy.html) data hygiene.
 
-{Stephan Kadauke & Richard Hanna, please represent your package as you wish.  Tell me if I've positioned it differently than you would have.}
+One call to a REDCap project will return a [supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/REDCapTidieR.html#tidying-redcap-exports) that contains Tables 1, 3a, and 3b as separate tibbles within a list-column.
 
 #### Choosing between the Approaches
 
@@ -301,7 +298,7 @@ Finally, cull unwanted cells using the parameters of `REDCapR::redcap_read()`.  
 * `filter_logic`: this will leverage the observation values to limit the rows returned.  Because the underlying table does not index the obs values, this will be less computationally efficient than the options above.
 * `datetime_range_begin` & `datetime_range_end`: this will return only the records that have been created or modified during the specified window.
 
-Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected). {This paragraph needs work.}
+Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected).
 
 ### Advanced
 
