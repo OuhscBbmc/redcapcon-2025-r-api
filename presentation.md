@@ -1,9 +1,11 @@
 R and Python package for REDCap API (beginner level)
 ======
 
-REDCapCon 2025
+REDCapCon September 2025
 
-Shawn Garbett, Günther Rezniczek, Geneva Marshall, Thomas Wilson, Will Beasley
+- Shawn Garbett, Vanderbilt University, Dept of Biostatistics
+- Günther Rezniczek, Ruhr-Universität Bochum, Dept of Obstetrics and Gynecology
+- Will Beasley, University of Oklahoma, Office of Clinical Research Informatics
 
 Follow along with us at
 <https://github.com/OuhscBbmc/redcapcon-2025-r-api>
@@ -30,7 +32,6 @@ Total time: **70m**
    1. REDCapTideR
 1. Writing (brief -Will)
 1. REDCap API 2.0 (Günther)
-   a. (Günther) 10m, Issues with API
 1. Further Resources (Will)
    1. Community is for REDCap admins, which many biostaticians are not
    1. [REDCap Tools](https://redcap-tools.github.io/projects/)
@@ -69,7 +70,7 @@ Motivation - Working with REDCap Data
 - Connects directly to the REDCap project
 - Always retrieves the **latest version** of the data
 - Integrates into **R/Python scripts and workflows**
-- Can also epxort reports programmatically
+- Can also export reports programmatically
 - Automates repetitive steps and reduces errors
 - Ensures **reproducibility** through scripted pipelines
 
@@ -96,8 +97,8 @@ Motivation - Working with REDCap Data
   - Integrates directly into scripted workflows**
   - Supports reproducibility and automation even as the project changes**
 
-\* These issues could very well be detected through analyses _outside_ of REDCap
-\*\* Of course, metadata changes may required the scripted pipeline to be adapted
+- These issues could very well be detected through analyses _outside_ of REDCap
+  - Of course, metadata changes may required the scripted pipeline to be adapted
 
 ### Why do we care?
 
@@ -153,7 +154,7 @@ Accessing REDCap Data via the API: Prerequisites
 - **Data Dictionary**
   - CSV file describing all fields in a project
   - Includes field names, types, choices, validation rules
-  - Downloadable from project setup page (requiers _Project Design and Setup_ right) or **API** ("Export Metadata")
+  - Downloadable from project setup page (requires _Project Design and Setup_ right) or **API** ("Export Metadata")
 
 - **Codebook**
   - Rich, human-readable view of project metadata
@@ -240,14 +241,18 @@ Below, line 7 of the CSV with date-shifted values is shown.
 - **API User Rights**
   - Separate from data export rights
   - Key options:
+
     ![api-user-rights](./images/api-user-rights.png)
+
     - **Export** (read data/metadata)
     - **Import/Update** (write data)
     - **External Modules API** (access EM-provided methods)
 
 - **API, API Playground, and API Documentation**
   - Accessible from the _Applications_ menu:
+
     ![api-playground-menu](./images/api-playground-menu.png)
+
   - Allows to request and then view/mangage the API token
   - Show available methods
   - Provide interactive examples for testing (read/write in development projects, read only in production projects)
@@ -302,7 +307,7 @@ One has a choice of `REDCapR` or `redcapAPI` and both offer a rich set of featur
 
 We begin with loading libraries and a token and a uri. NOTE: writing a token in R code is poor security practice. More on proper security in the next section.
 
-```{r}
+```r
 uri      <- "https://redcap-dev-2.ouhsc.edu/redcap/api/"
 token    <- "9A068C425B1341D69E83064A2D273A70"
 ```
@@ -311,7 +316,7 @@ token    <- "9A068C425B1341D69E83064A2D273A70"
 
 ### REDCapR
 
-```{r}
+```r
 rcr_1 <- REDCapR::redcap_read(redcap_uri=uri, token=token)
 #> 24 variable metadata records were read from REDCap in 0.3 seconds.  The http status code was 200.
 #> The data dictionary describing 17 fields was read from REDCap in 0.2 seconds.  The http status code was 200.
@@ -328,7 +333,7 @@ rcr_1 <- rcr_1$data # Extract just the data
 
 At this point, the data.frame `rcr_1` has everything one needs to start analyzing the project.
 
-```{r}
+```r
 rcr_1
 #> # A tibble: 5 � 25
 #>   record_id name_first name_last address  telephone email dob          age   sex
@@ -349,7 +354,7 @@ hist(rcr_1$weight)
 
 ![histogram-weight](./images/histogram-weight.png)
 
-```{r}
+```r
 summary(rcr_1)
 #>    record_id  name_first         name_last           address
 #>  Min.   :1   Length:5           Length:5           Length:5
@@ -426,12 +431,12 @@ summary(lm(age ~ 1 + sex + bmi, data = rcr_1))
 
 `redcapAPI` has a different approach in that a connection object is created. This object maintains state locally for things like the data dictionary to minimize round trips to the server.
 
-```{r}
+```r
 conn <- redcapAPI::redcapConnection(uri, token)
 rca_1 <- exportRecordsTyped(conn)
 ```
 
-```{r}
+```r
 head(rca_1)
 #>    record_id name_first name_last                                 address      telephone               email
 #>  1         1     Nutmeg  Nutmouse 14 Rose Cottage St.\nKenning UK, 323232 (405) 321-1111     nutty@mouse.com
@@ -445,9 +450,8 @@ hist(rca_1$weight)
 
 ![histogram-weight](./images/histogram-weight.png)
 
-```{r}
+```r
 summary(rca_1)
-> summary(rca_1)
 #>  record_id          name_first         name_last           address
 #> Length:5           Length:5           Length:5           Length:5
 #> Class :character   Class :character   Class :character   Class :character
@@ -469,27 +473,21 @@ summary(rca_1)
 #>                                                     Mean   :110.2   Mean   : 48
 #>                                                     3rd Qu.:180.0   3rd Qu.: 80
 #>                                                     Max.   :193.0   Max.   :104
-#>      bmi          comments           mugshot            health_complete
+#>    bmi          comments           mugshot            health_complete
 #> Min.   : 19.8   Length:5           Length:5           Incomplete:2
 #> 1st Qu.: 24.7   Class :character   Class :character   Unverified:1
 #> Median : 27.9   Mode  :character   Mode  :character   Complete  :2
 #> Mean   :110.9
 #> 3rd Qu.:204.1
 #> Max.   :277.8
-#>      race___1      race___2      race___3      race___4      race___5
+#>    race___1      race___2      race___3      race___4      race___5
 #> Unchecked:4   Unchecked:4   Unchecked:4   Unchecked:4   Unchecked:1
 #> Checked  :1   Checked  :1   Checked  :1   Checked  :1   Checked  :4
-#>
-#>
-#>
-#>
-#>      race___6                  ethnicity interpreter_needed
+#>    race___6                  ethnicity interpreter_needed
 #> Unchecked:4   Unknown / Not Reported:1   Mode :logical
 #> Checked  :1   NOT Hispanic or Latino:3   FALSE:3
 #>               Hispanic or Latino    :1   TRUE :1
 #>                                          NA's :1
-#>
-#>
 #> race_and_ethnicity_complete
 #> Incomplete:1
 #> Unverified:0
@@ -521,13 +519,13 @@ summary(lm(age ~ 1 + sex + bmi, data = rca_1))
 
 Note at this point there are already differences in the data, but not the fitted model parameters. The variable for sex in the REDCapR is presented as the numeric code, whereas the redcapAPI version converted it to a factor utilizing the defined metadata. How these choices of data type conversion are made and options for specifying them are covered later.
 
-```{r}
+```r
 summary(rcr_1$sex) # REDCapR data in tibble
 #>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 #>     0.0     0.0     1.0     0.6     1.0     1.0
 ```
 
-```{r}
+```r
 summary(rca_1$sex) # redcapAPI data in base R
 #> Female   Male
 #>      2      3
@@ -1151,7 +1149,7 @@ Or even better, use something like Shawn's "shelter" package w/ PHI.
 For more context, Univ of Oklahoma uses a database as a foundation of a [token server](https://ouhscbbmc.github.io/REDCapR/articles/SecurityDatabase.html).
 As Shawn said, the token storage and retrieval is independent of the package (and almost of the programming language).
 
-```{r retrieve-credential}
+```r retrieve-credential
 # Retrieve token, or even better use something like the shelter package for PHI
 path_credential <- system.file("misc/dev-2.credentials", package = "REDCapR")
 credential  <- REDCapR::retrieve_credential_local(
@@ -1168,7 +1166,7 @@ Although it is not required, we recommend specifying a [`readr::cols()`](https:/
 
 ##### Retrieve patient-level table (corresponding to Table 1)
 
-```{r redcapr-intake}
+```r redcapr-intake
 col_types_intake <-
   readr::cols_only(
     record_id                 = readr::col_integer(),
@@ -1191,7 +1189,7 @@ ds_intake
 
 ##### Retrieve patient-time-level tables (corresponding to Tables 3a & 3b)
 
-```{r redcapr-repeating}
+```r redcapr-repeating
 col_types_blood_pressure <-
   readr::cols(
     record_id                 = readr::col_integer(),
@@ -1433,7 +1431,7 @@ Further Resources
   - post a question to Community, or
   - get you in touch with a friend at another institution.
 
-- REDCap Playground (see Günther's slides)
+- REDCap API Playground (see Günther's slides)
 
 ### Packages in Other Languages
 
@@ -1449,8 +1447,12 @@ Actively developed packages & their maintainers (who are here that you can talk 
 
 ### Other Packages in R
 
-- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna,  CHOP)
-- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami)
+- [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) (Stephan Kadauke & Richard Hanna, CHOP)
+
+  - Focuses on a tidy _grain_
+- [tidyREDCap](https://raymondbalise.github.io/tidyREDCap/) (Raymond Balise, U Miami) tomorrow 2pm biostat track
+
+  - Focuses on a cleaner _variables_
 - [REDCapDM](https://github.com/bruigtp/REDCapDM) (João Carmezim, IGTP, Spain)
 - [REDCapCAST](https://github.com/agdamsbo/REDCapCAST) (Andreas Gammelgaard, Aarhus U, Denmark)
 
@@ -1482,8 +1484,15 @@ Closing
 - Helps each other stay up-to-date w/ best practices & packages
 - <https://redcap.vumc.org/community/post.php?id=117300>
 
+### Contribute to Exising Packages
+
+- Both the foundation packages (redcapAPI & REDCapR), as well as the 2nd layer packages
+- Add vignettes, documentation, functions, parameters, & test cases
+- Find most packages at [REDCap Tools](https://redcap-tools.github.io/projects/)
+- There's no need to compete to be recognized.  It's not zero sum. Just be collaborative and folks here will embracee & help you make your own space to attack a problem that you know we'll all benefit from.
+
 ### Questions?
 
-Shawn Garbett: <shawn.garbett@vumc.org>
-Günther Rezniczek: <g.rezniczek@gmail.com>
-Will Beasley: <william-beasley@ou.edu>
+- Shawn Garbett: <shawn.garbett@vumc.org>
+- Günther Rezniczek: <g.rezniczek@gmail.com>
+- Will Beasley: <william-beasley@ou.edu>
