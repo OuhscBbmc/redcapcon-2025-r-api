@@ -1,8 +1,7 @@
 longitudinal
 ===================
 
-Background
--------------------------------------------------------------------
+### Background
 
 This vignette pertains to reading REDCap records from a project that (a) has longitudinal events or (b) has a repeating measure.  The first section conceptually discusses how REDCap stores complex structures.  The remaining sections describe how to best retrieve complex structures with the [REDCapTidyieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) and [REDCapR](https://ouhscbbmc.github.io/REDCapR/) packages.
 
@@ -10,16 +9,17 @@ This vignette pertains to reading REDCap records from a project that (a) has lon
 * If you are reading from a *simple* project, just call REDCapR's [`redcap_read()`](https://ouhscbbmc.github.io/REDCapR/reference/redcap_read.html).
 * If you want to perform some other operation (such as writing records to REDCap), review the [Reference of REDCapR functions](https://ouhscbbmc.github.io/REDCapR/reference/index.html) to see what is currently available.
 
-If your REDCap project is longitudinal or contains repeating measures, a single call to the API (or a single export through the browser) will return a dataset that is not readily analyzed.  Instead, the dataset will resemble Table 5.  This isn't because of a software bug, but because you haven't told the software how you would like the data structured.  There isn't a good way to jam this multidimensional space into a rectangle of points.  Our advice for querying REDCap is the same as querying any database system: request separate datasets that have a natural "grain" and assemble them as to fit your analyses.
+If your REDCap project is longitudinal or contains repeating measures, a single call to the API (or a single export through the browser) will return a dataset that is not readily analyzed.  Instead, the dataset will resemble Table 5.  This isn't because of a software bug, but because you haven't told the software how you would like the data structured.
 
-Illustration of How Data Points are Structured
-------------------------------------------------------------------
+There isn't a good way to jam this multidimensional space into a rectangle of points.  Our advice for querying REDCap is the same as querying any database system: request separate datasets that have a natural "grain" and assemble them as to fit your analyses.
 
-### Possible Table Structures
+### Illustration of How Data Points are Structured
+
+#### Possible Table Structures
 
 Suppose you have two patients (*i.e.*, "1" and "2") with three intake variables (*i.e.*, `height`, `weight`, and `bmi`).  If you record this on a piece of paper, it would probably look like Table 1.  The table's *grain* is "patient", because each row represents a distinct patient.  Understanding the grain of each structure below will help you understand how the structures are re-expressions of the same set of observations.
 
-#### Table 1: patient grain
+##### Table 1: patient grain
 
 | pt<br>id | height | weight | bmi   |
 | :------: | :----: | :----: | :---: |
@@ -30,7 +30,7 @@ This patient-grain structure is how the data points are most comfortably inputte
 
 REDCap's flexibility is a driver of its success.  Once a research team learns REDCap, it can reuse the knowledge to capture anything from leukemia to lunch orders.  But to achieve this flexibility in the world of REDCap and EMRs, data are stored along the observation grain.  In computer science, this is commonly called an EAV structure (which stands for entity-attribute-value).  The patient's ID is the entity, the variable type is the attribute, and the observed point is the value.  It can also be thought of as a "key-value store" nested within a patient (where "key" is a synonym of "attribute").  Notice that the two wider rows have morphed into six skinnier rows --one row per observation.  If you are a curious database administrator, peek at the the structure and rows of the `redcap_data` table.  It is the most important table in the database.
 
-#### Table 2: observation grain for `intake` instrument
+##### Table 2: observation grain for `intake` instrument
 
 REDCap and EMR databases store observations in their underlying table.  This table is a simplification of the `redcap_data` table, which is the heart of the REDCap's internal database.
 
@@ -45,7 +45,7 @@ REDCap and EMR databases store observations in their underlying table.  This tab
 
 If the investigation gains a longitudinal or repeating component, it becomes necessary to include the dimension of time.  Suppose the protocol specifies five time points; the blood pressure instrument is captured at times 1, 2, & 3 while the laboratory instrument is captured at times 1 & 2.  If you record this stage on paper, it will likely resemble Tables 3a & 3b: one for vitals and one for labs.
 
-#### Table 3a: patient-time grain for `blood_pressure` instrument
+##### Table 3a: patient-time grain for `blood_pressure` instrument
 
 | pt<br>id | time | sbp  | dbp  |
 | :------: | :--: | :--: | :--: |
@@ -56,7 +56,7 @@ If the investigation gains a longitudinal or repeating component, it becomes nec
 |        2 |    2 |  2.2 | 22.2 |
 |        2 |    3 |  2.3 | 22.3 |
 
-#### Table 3b: patient-time grain for `laboratory` instrument
+##### Table 3b: patient-time grain for `laboratory` instrument
 
 | pt<br>id | time | lab  | dose   |
 | :------: | :--: | :--: | :----: |
@@ -67,7 +67,7 @@ If the investigation gains a longitudinal or repeating component, it becomes nec
 
 When these measurements are added to REDCap's observation table, it resembles Table 4.  Two new columns are required to uniquely distinguish the instrument and its ordinal position.  Notice the first six rows are copied from Table 2; they have empty values for the repeating structure.
 
-#### Table 4: observation grain for `intake`, `blood_pressure`, and `laboratory` instruments
+##### Table 4: observation grain for `intake`, `blood_pressure`, and `laboratory` instruments
 
 | pt<br>id | repeat<br>instrument | repeat<br>instance | key    | value   |
 | :------: | :------------------- | :----------------: | :----- | ------: |
@@ -102,7 +102,7 @@ As mentioned above, there isn't a universally good way to coerce Tables 1, 3a, a
 
 When forced to combine the different entities, the best option is probably Table 5.  We call this a "block dataset", borrowing from linear algebra's [block matrix](https://mathworld.wolfram.com/BlockMatrix.html) term.  You can see the mishmash of tables masquerading as a unified dataset.  The rows lack the conceptual coherency of Tables 1, 3a, & 3b.
 
-#### Table 5: mishmashed grain
+##### Table 5: mishmashed grain
 
 | pt<br>id | repeat<br>instrument | repeat<br>instance | height | weight | bmi   | sbp  | dbp  | lab  | conc    |
 | :------: | :------------------- | :----------------: | :----: | :----: | :---: | :--: | :--: | :--: | :-----: |
@@ -130,9 +130,9 @@ For this reason, REDCap and EMR design their observation table to resemble the c
 > In the case of a sparse matrix, substantial memory requirement reductions can be realized by storing only the non-zero entries. Depending on the number and distribution of the non-zero entries, different data structures can be used and yield huge savings in memory when compared to the basic approach. The trade-off is that accessing the individual elements becomes more complex and additional structures are needed to be able to recover the original matrix unambiguously.
 > (source: [Wikipedia: Sparse matrix - storage](https://en.wikipedia.org/wiki/Sparse_matrix#Storage))
 
-### Terminology
+#### Terminology
 
-#### observation
+##### observation
 
 The term "observation" in the world of [medical databases](https://ohdsi.github.io/CommonDataModel/cdm60.html#OBSERVATION) has a different and more granular meaning than it does in the [tidyverse literature](https://r4ds.had.co.nz/tidy-data.html#tidy-data-1).  In REDCap and medical databases, an observation is typically a single point (such as a heart rate or systolic blood pressure) with contextual variables (such as the the associated date, unit, visit ID, and patient ID); see Tables 2 and 4 above.  In the tidyverse publications, an observation is roughly equivalent to a REDCap instrument (which is a collection of associated values); see Tables 1, 3a, and 3b.
 
@@ -143,8 +143,7 @@ The term "observation" in the world of [medical databases](https://ohdsi.github.
 | A single measured point | observation | value |
 | A collection of associated points | instrument | observation |
 
-Retrieving from REDCap
--------------------------------------------------------------------
+### Retrieving from REDCap
 
 Many new REDCap users will submit a single API call and unintentionally obtain something like Table 5; they then try to extract something resembling Tables 1, 3a, & 3b.  Although this can be successful, we strongly discourage it.  The code is difficult to maintain and is not portable to REDCap projects with different instruments.  (The code is really slow and ugly too.)
 
@@ -171,13 +170,13 @@ credential  <- REDCapR::retrieve_credential_local(
 )
 ```
 
-### One REDCapR Call for Each Table
+#### One REDCapR Call for Each Table
 
 The tidy datasets represented in Tables 1, 3a, and 3b can be obtained by calling REDCapR three times --one call per table.  Using the `forms` parameter, pass "intake" to get Table 1, "blood_pressure" to get Table 3a, and "laboratory" to get Table 3b.
 
 Although it is not required, we recommend specifying a [`readr::cols()`](https://readr.tidyverse.org/reference/cols.html) object to ensure the desired variable data types.
 
-#### Retrieve patient-level table (corresponding to Table 1)
+##### Retrieve patient-level table (corresponding to Table 1)
 
 ```{r redcapr-intake}
 col_types_intake <-
@@ -200,7 +199,7 @@ ds_intake <-
 ds_intake
 ```
 
-#### Retrieve patient-time-level tables (corresponding to Tables 3a & 3b)
+##### Retrieve patient-time-level tables (corresponding to Tables 3a & 3b)
 
 ```{r redcapr-repeating}
 col_types_blood_pressure <-
@@ -248,7 +247,7 @@ ds_laboratory %>%
   tidyr::drop_na(redcap_repeat_instrument)
 ```
 
-#### Retrieve block tables (corresponding to Table 5)
+##### Retrieve block tables (corresponding to Table 5)
 
 If for some reason you need the block dataset through the API, one call will retrieve it.
 
@@ -264,13 +263,13 @@ ds_block <-
 ds_block
 ```
 
-### One REDCapTidieR Call for All Tables
+#### One REDCapTidieR Call for All Tables
 
 [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/)'s initial motivation is to facilitate longitudinal analyses and promote [tidy](https://r4ds.hadley.nz/data-tidy.html) data hygiene.
 
 {Stephan Kadauke & Richard Hanna, please represent your package as you wish.  Tell me if I've positioned it differently than you would have.}
 
-### Choosing between the Approaches
+#### Choosing between the Approaches
 
 When retrieving data from REDCap, we recommend calling [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) in many scenarios, such as:
 
@@ -289,7 +288,7 @@ If in doubt, start with REDCapTidieR.  Escalate to REDCapR if your download time
 
 And of course many scenarios are solved best with a combination of both packages, such as (a) [REDCapR](https://ouhscbbmc.github.io/REDCapR/) populates the initial demographics in REDCap, (b) research staff enter measures collected from patients over time, (c) [REDCapTidieR](https://chop-cgtinformatics.github.io/REDCapTidieR/) retrieves the complete longitudinal dataset, (d) [dplyr](https://dplyr.tidyverse.org/) joins the tibbles, and finally (e) [lme4](https://cran.r-project.org/package=lme4/vignettes/lmer.pdf) tests hypotheses involving [patient trajectories](https://datascienceplus.com/analysing-longitudinal-data-multilevel-growth-models-i/) over time.
 
-### Escalating to REDCapR
+#### Escalating to REDCapR
 
 Even if you think you'll need REDCapR's low-level control, consider starting with REDCapTidieR anyway.  ...particularly if you are unsure how to specify the grain of each table.  The structure of REDCapTidieR's tables easily compatible with conventional analyses.  If you need the performance of REDCapR but are unsure how the tables should look, simply execute something like `REDCapTidieR::redcap_read_tidy(url, project_token)` and study its output.  Then try to mimic it exactly with `REDCapR::redcap_read()` calls.
 
@@ -304,7 +303,6 @@ Finally, cull unwanted cells using the parameters of `REDCapR::redcap_read()`.  
 
 Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected). {This paragraph needs work.}
 
-Advanced
------------------------------------------------------------------------------
+### Advanced
 
-### Longitudinal
+#### Longitudinal
