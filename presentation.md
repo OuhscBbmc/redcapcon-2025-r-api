@@ -1310,6 +1310,9 @@ Test the water:
 - Start w/ a single patient & a few columns (eg, `record_id` & `gender`)
 - Slowly add more rows & columns
 
+Or download the dataset, and try to reupload it.
+Then make a little change and try to reupload it.
+
 And intermediate snippet might be:
 
 ```r
