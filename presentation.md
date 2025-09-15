@@ -1291,9 +1291,12 @@ Finally, cull unwanted cells using the parameters of `REDCapR::redcap_read()`.  
 
 Note that the efficiency gain from moving from the block dataset to REDCapTidieR is different than the gain from moving from REDCapTidieR to REDCapR.  When moving to from Table 5 to a [REDCapTidieR Supertibble](https://chop-cgtinformatics.github.io/REDCapTidieR/articles/glossary.html#supertibble), you are eliminating empty cells that will never contain worthwhile data.  When moving from a REDCapTidieR Supertibble call to a collection of REDCapR calls, you are eliminating cells that contain data, but may not be relevant to your analysis (such as a patient's name or the time a lab specimen was collected).
 
-### Advanced
+#### Transforming Long to Wide
 
-#### Longitudinal
+Sometimes the data structure is long, and the analysis software/function wants wide.
+If so, either transform yourself with something like [`tidyr::pivot_wider()`](https://tidyr.tidyverse.org/reference/pivot_wider.html),
+or let redcapAPI leverage its knowledge of REDCap structures with
+[`redcapAPI::widerRepeated()`](https://www.rdocumentation.org/packages/redcapAPI/versions/2.11.0/topics/widerRepeated).
 
 Writing
 ------------
