@@ -1298,7 +1298,7 @@ If so, either transform yourself with something like [`tidyr::pivot_wider()`](ht
 or let redcapAPI leverage its knowledge of REDCap structures with
 [`redcapAPI::widerRepeated()`](https://www.rdocumentation.org/packages/redcapAPI/versions/2.11.0/topics/widerRepeated).
 
-Writing
+Writing/Importing to REDCap
 ------------
 
 ### Writing to the server is more error prone than reading
@@ -1336,7 +1336,7 @@ Strategy:
 - Upload the patient-level instrument(s)
 - Upload the each repeating instrument separately.
 
-### Gotchas
+### Gotchas for Writing/Importing
 
 - Client encoding & problematic non-ASCII characters
 
@@ -1371,7 +1371,7 @@ Strategy:
   REDCapR::validate_for_write(ds_daily, convert_logical_to_integer = TRUE)
   ```
 
-### Next Steps
+### Next Steps for Writing/Importing
 
 - More Complexity
   - eg, arms, longitudinal events
