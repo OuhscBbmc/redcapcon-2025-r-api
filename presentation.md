@@ -258,13 +258,13 @@ Below, line 7 of the CSV with date-shifted values is shown.
   - Provide interactive examples for testing (read/write in development projects, read only in production projects)
   - Provides concrete code snippets for various programming languages
 
-    Screenshot of a user's API management page in a project:
+    Screenshot of a user's API management page in a project:  
     ![request-api-token](./images/request-api-token.png)
 
-    Once an API token has been created, it can be viewed and managed:
+    Once an API token has been created, it can be viewed and managed:  
     ![api-token-view-and-manage](./images/api-token-view-and-manage.png)
 
-    Interactive API method calls executed in the API Playground are shown as code:
+    Interactive API method calls executed in the API Playground are shown as code:  
     ![interactive-method-as-code](./images/interactive-method-as-code.png)
 
 - **API Tokens**
