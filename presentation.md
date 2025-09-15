@@ -1500,5 +1500,5 @@ Closing
 ### Questions?
 
 - Shawn Garbett: <shawn.garbett@vumc.org>
-- Günther Rezniczek: <g.rezniczek@gmail.com>
+- Günther Rezniczek: <guenther.rezniczek@rub.de>
 - Will Beasley: <william-beasley@ou.edu>
