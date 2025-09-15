@@ -133,7 +133,7 @@ Accessing REDCap Data via the API: Prerequisites
   - Basic units of data (e.g., age, blood pressure, diagnosis)
   - Each field has a **type** (text, number, date, multiple choice, etc.)
 - **Instruments** (Forms)
-  - Simply a **collection of fields**
+  - Are **collections of fields**
   - Used for data entry or surveys
 - **Classic projects**
   - One timeline (one "arm" with one event; not visible in the UI)
