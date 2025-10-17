@@ -22,6 +22,7 @@ REDCapCon September 2025
 Follow along with us at
 <https://github.com/OuhscBbmc/redcapcon-2025-r-api>
 
+<!--
 Agenda
 ------------
 
@@ -55,6 +56,7 @@ Total time: **70m**
    1. RAISE
    1. Security Committee
    1. Questions?
+-->
 
 Motivation - Working with REDCap Data
 ------------
