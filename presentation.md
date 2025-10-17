@@ -1,5 +1,17 @@
-R and Python package for REDCap API (beginner level)
-======
+---
+title: "R and Python package for REDCap API (beginner level)"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    embed-resources: true
+  typst:
+    toc: true
+    margin:
+      x: 1cm
+      y: 1cm
+---
+
 
 REDCapCon September 2025
 
@@ -1149,7 +1161,7 @@ Or even better, use something like Shawn's "shelter" package w/ PHI.
 For more context, Univ of Oklahoma uses a database as a foundation of a [token server](https://ouhscbbmc.github.io/REDCapR/articles/SecurityDatabase.html).
 As Shawn said, the token storage and retrieval is independent of the package (and almost of the programming language).
 
-```r retrieve-credential
+```r
 # Retrieve token, or even better use something like the shelter package for PHI
 path_credential <- system.file("misc/dev-2.credentials", package = "REDCapR")
 credential  <- REDCapR::retrieve_credential_local(
@@ -1166,7 +1178,7 @@ Although it is not required, we recommend specifying a [`readr::cols()`](https:/
 
 ##### Retrieve patient-level table (corresponding to Table 1)
 
-```r redcapr-intake
+```r
 col_types_intake <-
   readr::cols_only(
     record_id                 = readr::col_integer(),
@@ -1189,7 +1201,7 @@ ds_intake
 
 ##### Retrieve patient-time-level tables (corresponding to Tables 3a & 3b)
 
-```r redcapr-repeating
+```r
 col_types_blood_pressure <-
   readr::cols(
     record_id                 = readr::col_integer(),
@@ -1239,7 +1251,7 @@ ds_laboratory |>
 
 If for some reason you need the block dataset through the API, one call will retrieve it.
 
-```{r redcapr-block}
+```r
 ds_block <-
   REDCapR::redcap_read(
     redcap_uri  = credential$redcap_uri,
